@@ -17,6 +17,7 @@ alias gps="git push"
 alias topages="git push && git checkout gh-pages && git merge master && git push && git checkout master"
 alias gcl="git clone"
 alias gr="git reset"
+alias gpl="git pull"
 
 # terminal window
 alias cls="clear"
