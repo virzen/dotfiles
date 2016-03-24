@@ -1,6 +1,6 @@
 # git
-alias gs="git status"
-alias gss="git status --short"
+alias gst="git status"
+alias gs="git status --short"
 alias ga="git add"
 alias gaa="git add ."
 alias gc="git commit"
