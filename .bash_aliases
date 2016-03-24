@@ -19,5 +19,5 @@ alias gcl="git clone"
 alias gr="git reset"
 
 # terminal window
-cls="clear"
-rst="bash --login"
+alias cls="clear"
+alias rst="bash --login"
