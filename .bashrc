@@ -60,7 +60,7 @@ if [ "$color_prompt" = yes ]; then
 	# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 	if [ -f /etc/bash_completion.d/git-prompt ]; then
 		source /etc/bash_completion.d/git-prompt
-		PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}[\[\033[01;32m\]\u@\h\[\033[00m\]] \[\033[01;34m\]\w\[\033[00m\] \[\e[1;36m\]$(__git_ps1 "(%s)")\[\e[0m\]\n\$'
+		PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}[\[\033[01;35m\]\u@\h\[\033[00m\]] \[\033[01;34m\]\w\[\033[00m\] \[\e[1;36m\]$(__git_ps1 "(%s)")\[\e[0m\]\n\$'
 	else
 		PS1='${debian_chroot:+($debian_chroot)}[\[\033[01;32m\]\u@\h\[\033[00m\]] \[\033[01;34m\]\w\[\033[00m\]\n\$'
 	fi
