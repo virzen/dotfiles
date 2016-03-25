@@ -22,3 +22,8 @@ alias gpl="git pull"
 # terminal window
 alias cls="clear"
 alias rst="bash --login"
+
+# browser sync
+bs() {
+	browser-sync start --server --files '**' --no-online $@ &
+}
