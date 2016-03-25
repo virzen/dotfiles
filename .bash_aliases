@@ -4,7 +4,8 @@ alias gs='git status --short'
 
 alias gc='git commit'
 alias gcm='git commit -m'
-alias gca='git commit --amend'
+alias gca='git commit -a'
+alias gcam='git commit -am'
 
 alias gl='git log --oneline'
 alias gll='git log'
