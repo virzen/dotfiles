@@ -17,13 +17,16 @@ alias gcl='git clone'
 alias gpl='git pull'
 
 ga() {
-	git add $@; gs
+	git add $@
+	gs
 }
 gaa() {
-	git add . $@; gs
+	git add . $@
+	gs
 }
 gr() {
-	git reset $@; gs
+	git reset $@
+	gs
 }
 
 # terminal window
