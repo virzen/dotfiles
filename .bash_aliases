@@ -21,7 +21,7 @@ alias gpl="git pull"
 
 # terminal window
 alias cls="clear"
-alias rst="bash --login"
+alias relog="bash --login"
 
 # browser sync
 bs() {
