@@ -23,7 +23,16 @@ alias gpl="git pull"
 alias cls="clear"
 alias relog="bash --login"
 
+# firefox dev edition
+alias ff='/home/virzen/.local/share/umake/web/firefox-dev/firefox'
+
+# function (move to a new file when there gets to be a lot of them)
 # browser sync
 bs() {
 	browser-sync start --server --files '**' --no-online $@ &
+}
+
+# firefox search
+sr() {
+	ff -search "$(echo $@)"
 }
