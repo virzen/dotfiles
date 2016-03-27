@@ -38,6 +38,11 @@ gr() {
 alias cls='clear'
 alias relog='bash --login'
 
+# atom editor
+alias ai='apm install'
+alias ar='apm remove'
+alias au='apm update'
+
 # firefox dev edition
 alias ff='/home/virzen/.local/share/umake/web/firefox-dev/firefox'
 
@@ -50,3 +55,6 @@ bs() {
 sr() {
 	ff -search "$(echo $@)"
 }
+
+# google chrome
+alias chrome="google-chrome-stable"
