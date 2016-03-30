@@ -58,3 +58,7 @@ sr() {
 
 # google chrome
 alias chrome="google-chrome-stable"
+
+# set global editor to vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
