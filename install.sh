@@ -15,3 +15,6 @@ ln -svf "$DOTFILES_DIR/.bash_logout" ~
 ln -svf "$DOTFILES_DIR/.gitconfig" ~
 ln -svf "$DOTFILES_DIR/.vimrc" ~
 # ln -svf "$DOTFILES_DIR/git/.gitignore_global" ~
+
+# install nvm
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
