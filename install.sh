@@ -14,6 +14,7 @@ ln -svf "$DOTFILES_DIR/.profile" ~
 ln -svf "$DOTFILES_DIR/.bash_logout" ~
 ln -svf "$DOTFILES_DIR/.gitconfig" ~
 ln -svf "$DOTFILES_DIR/.vimrc" ~
+ln -svf "$DOTFILES_DIR/.vim" ~
 # ln -svf "$DOTFILES_DIR/git/.gitignore_global" ~
 
 # install nvm
