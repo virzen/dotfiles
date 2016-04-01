@@ -15,6 +15,8 @@ alias gcob='git checkout -b'
 alias pages='git checkout gh-pages'
 alias master='git checkout master'
 
+alias gd='git diff'
+
 alias topages='git push && git checkout gh-pages && git merge master && git push && git checkout master'
 alias gcl='git clone'
 alias gpl='git pull'
