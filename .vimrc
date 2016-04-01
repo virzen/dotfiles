@@ -106,3 +106,14 @@ set nobackup
 
 " Set GUI editor font
 set guifont=Monospace\ 13
+
+" Disable bell sound and screen flashing
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
+" Enable autoindent and set tab width to 4 spaces
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
