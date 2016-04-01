@@ -95,3 +95,14 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+" Use solarized theme syntax
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Disable backup files
+set nobackup
+
+" Set GUI editor font
+set guifont=Monospace\ 13
