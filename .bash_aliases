@@ -50,7 +50,7 @@ alias ff='/home/virzen/.local/share/umake/web/firefox-dev/firefox'
 
 # browser sync
 bs() {
-	browser-sync start --server --files '**' --no-online $@ &
+	browser-sync start --server --files '**' --no-online --no-open $@ &
 }
 
 # firefox search
