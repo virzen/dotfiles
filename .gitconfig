@@ -3,3 +3,5 @@
 	name = Virzen
 [push]
 	default = simple
+[core]
+	pager = less -x 1,5
