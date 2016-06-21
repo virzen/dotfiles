@@ -16,6 +16,7 @@ alias pages='git checkout gh-pages'
 alias master='git checkout master'
 
 alias gd='git diff'
+alias gds='git diff --staged'
 
 alias topages='git push && git checkout gh-pages && git merge master && git push && git checkout master'
 alias gcl='git clone'
@@ -27,8 +28,16 @@ ga() {
 	git add $@
 	gs
 }
+gap() {
+	ga -p $@
+	gs
+}
 gaa() {
-	git add . $@
+	ga . $@
+	gs
+}
+gaap() {
+	ga -p . $@
 	gs
 }
 gr() {
@@ -45,22 +54,7 @@ alias ai='apm install'
 alias ar='apm remove'
 alias au='apm update'
 
-# firefox dev edition
-alias ff='/home/virzen/.local/share/umake/web/firefox-dev/firefox'
-
 # browser sync
 bs() {
 	browser-sync start --server --files '**' --no-online --no-open $@ &
 }
-
-# firefox search
-sr() {
-	ff -search "$(echo $@)"
-}
-
-# google chrome
-alias chrome="google-chrome-stable"
-
-# set global editor to vim
-export VISUAL=vim
-export EDITOR="$VISUAL"
