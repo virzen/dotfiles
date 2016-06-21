@@ -30,19 +30,15 @@ ga() {
 }
 gap() {
 	ga -p $@
-	gs
 }
 gaa() {
 	ga . $@
-	gs
 }
 gaap() {
 	ga -p . $@
-	gs
 }
 gr() {
 	git reset $@
-	gs
 }
 
 # terminal window
