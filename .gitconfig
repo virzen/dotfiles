@@ -4,4 +4,4 @@
 [push]
 	default = simple
 [core]
-	pager = less -x 1,5
+	pager = less -x2
