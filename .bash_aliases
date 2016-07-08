@@ -2,10 +2,18 @@
 alias gst='git status'
 alias gs='git status --short'
 
+alias ga='git add'
+alias gaa='git add --all'
+alias gap='git add --patch'
+
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gca='git commit -a'
 alias gcam='git commit -am'
+
+alias gr='git reset'
+alias grs='git reset --soft'
+alias grh='git reset --hard'
 
 alias gl='git log --oneline'
 alias gll='git log'
@@ -22,28 +30,29 @@ alias topages='git push && git checkout gh-pages && git merge master && git push
 alias gcl='git clone'
 alias gpl='git pull'
 alias gps='git push'
-alias gm='git merge'
+# alias gm='git merge'
 
-ga() {
-	git add $@
-	gs
-}
-gap() {
-	ga -p $@
-}
-gaa() {
-	ga . $@
-}
-gaap() {
-	ga -p . $@
-}
-gr() {
-	git reset $@
-}
+# this section causes git in zsh to break
+# ga() {
+# 	git add $@
+# 	gs
+# }
+# gap() {
+# 	ga -p $@
+# }
+# gaa() {
+# 	ga . $@
+# }
+# gaap() {
+# 	ga -p . $@
+# }
+# gr() {
+# 	git reset $@
+# }
 
 # terminal window
 alias cls='clear'
-alias relog='bash --login'
+# alias relog='bash --login'
 
 # atom editor
 alias ai='apm install'
@@ -54,3 +63,8 @@ alias au='apm update'
 bs() {
 	browser-sync start --server --files '**' --no-online --no-open $@ &
 }
+
+# common
+alias ws='cd ~/Workspace'
+alias restart='exec zsh'
+alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy'
