@@ -1,7 +1,0 @@
-[user]
-	email = wiktor.czajkowski@gmail.com
-	name = Virzen
-[push]
-	default = simple
-[core]
-	pager = less -x2
