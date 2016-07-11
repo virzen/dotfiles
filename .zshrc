@@ -27,10 +27,10 @@ ZSH_THEME="spaceship"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -57,6 +57,13 @@ plugins=(git brew osx)
 SPACESHIP_RUBY_SHOW="false"
 SPACESHIP_VENV_SHOW="false"
 SPACESHIP_NVM_SHOW="false"
+
+# history settings
+HISTSIZE=32768;
+HISTFILESIZE=$HISTSIZE;
+HISTCONTROL=ignoredups;
+HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
+
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
