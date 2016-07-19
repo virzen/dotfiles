@@ -26,6 +26,10 @@ alias master='git checkout master'
 alias gd='git diff'
 alias gds='git diff --staged'
 
+alias gst='git stash'
+alias gsts='git stash save'
+alias gstp='git stash pop'
+
 alias topages='git push && git checkout gh-pages && git merge master && git push && git checkout master'
 alias gcl='git clone'
 alias gpl='git pull'
