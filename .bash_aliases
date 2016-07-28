@@ -76,3 +76,6 @@ alias restart='exec zsh'
 alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Public key copied to clipboard!"'
 alias off='sudo shutdown -h now'
 alias rserv='bundle exec rails server'
+
+# projects
+alias whipper='wd whipper && gst && gprs && gstp && rserv'
