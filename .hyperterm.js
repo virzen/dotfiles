@@ -46,7 +46,9 @@ module.exports = {
       '#cc00ff',
       '#00ffff',
       '#ffffff'
-    ]
+    ],
+
+    windowSize: [900, 700]
   },
 
   // a list of plugins to fetch and install from npm
