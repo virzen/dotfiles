@@ -1,6 +1,6 @@
 # git
 # alias hub to git
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 
 alias gst='git status'
 alias gs='git status --short'
