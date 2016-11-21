@@ -2,3 +2,6 @@
 	name = Wiktor Czajkowski
 [pull]
 	rebase = true
+	default = simple
+[push]
+	default = simple
