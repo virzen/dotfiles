@@ -97,3 +97,5 @@ source $ZSH/oh-my-zsh.sh
 source ~/.bash_aliases
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
