@@ -1,7 +1,4 @@
 # git
-# alias hub to git
-# eval "$(hub alias -s)"
-
 alias gst='git status'
 alias gs='git status --short'
 
@@ -42,7 +39,7 @@ alias gprs='git pull --rebase && git push'
 
 # terminal window
 alias cl='clear'
-# alias relog='bash --login'
+alias restart='exec zsh'
 
 # browser sync
 bs() {
@@ -50,7 +47,6 @@ bs() {
 }
 
 # common
-alias restart='exec zsh'
 alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Public key copied to clipboard!"'
 
 # rails
