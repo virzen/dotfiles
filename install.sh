@@ -8,6 +8,10 @@ export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # make zsh default shell
 # chsh -s $(which zsh)
+#=== Helpers ===#
+command_exists() {
+  command -v "$1" >/dev/null 2>&1 || { echo >&2 "$1 not installed."; exit 1; }
+}
 
 # symlinks
 # s - soft link
