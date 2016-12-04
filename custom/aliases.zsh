@@ -1,4 +1,4 @@
-# git
+#=== git ===#
 alias gst='git status'
 alias gs='git status --short'
 
@@ -38,18 +38,18 @@ alias gps='git push'
 alias gprs='git pull --rebase && git push'
 alias gpsnv='git push --no-verify'
 
-# terminal window
+#=== terminal window ===#
 alias cl='clear'
 alias restart='exec zsh'
 
-# browser sync
+#=== browser sync ===#
 bs() {
 	browser-sync start --server --files '**' --no-online --no-open $@ &
 }
 
-# common
+#=== ssh ===#
 alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Public key copied to clipboard!"'
 
-# rails
+#=== rails ===#
 alias rserv='bundle exec rails server'
 alias rmg='rails db:migrate RAILS_ENV=development'
