@@ -1,6 +1,8 @@
 #=== Path to oh-my-zsh installation ===#
 export ZSH=$HOME/.oh-my-zsh
 
+# FIXME: Use script's directory, since .dotfiles doesn't need to be in
+# user's home dir
 export ZSH_CUSTOM=$HOME/.dotfiles/custom
 
 plugins=(git brew osx git-extras hub history zsh-syntax-highlighting z)
