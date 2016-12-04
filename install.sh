@@ -11,6 +11,10 @@ heading "Pulling the newest version of dotfiles"
 [ -d "$DOTFILES_DIR"/.git ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 
 heading "Installing missing utilities."
+# TODO: Install often used programs
+# brew
+# zsh -> oh my zsh
+# nvm -> node
 
 heading "Creating symlinks"
 ln -svf "$DOTFILES_DIR/.zshrc" ~
