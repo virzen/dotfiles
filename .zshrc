@@ -1,6 +1,7 @@
 #=== Path to oh-my-zsh installation ===#
 export ZSH=$HOME/.oh-my-zsh
 
+export ZSH_CUSTOM=$HOME/.dotfiles/custom
 
 #=== Theme ===#
 ZSH_THEME="spaceship"
