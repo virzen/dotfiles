@@ -13,7 +13,7 @@ plugins=(git brew osx git-extras hub history wd zsh-syntax-highlighting z)
 ZSH_THEME="spaceship"
 SPACESHIP_RUBY_SHOW="false"
 SPACESHIP_VENV_SHOW="false"
-SPACESHIP_NVM_SHOW="false"
+SPACESHIP_NVM_SHOW="true"
 
 #=== History ===#
 HISTSIZE=32768;
