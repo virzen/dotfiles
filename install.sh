@@ -13,9 +13,7 @@ export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # s - soft link
 # v - verbose
 # f - force (overwrite existing files)
-ln -svf "$DOTFILES_DIR/.bash_aliases" ~
 ln -svf "$DOTFILES_DIR/.zshrc" ~
-ln -svf "$DOTFILES_DIR/.hyperterm.js" ~
 ln -svf "$DOTFILES_DIR/.gitconfig" ~
 
 # install nvm
