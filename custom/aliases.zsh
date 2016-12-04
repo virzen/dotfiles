@@ -30,6 +30,7 @@ alias gst='git stash'
 alias gsts='git stash save'
 alias gstp='git stash pop'
 alias gstl='git stash list'
+alias gstsh='git stash show -p'
 
 alias gcl='git clone'
 alias gpl='git pull'
