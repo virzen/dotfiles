@@ -36,6 +36,7 @@ alias gpl='git pull'
 alias gpr='git pull --rebase'
 alias gps='git push'
 alias gprs='git pull --rebase && git push'
+alias gpsnv='git push --no-verify'
 
 # terminal window
 alias cl='clear'
