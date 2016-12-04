@@ -1,13 +1,5 @@
 #=== Path to oh-my-zsh installation ===#
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_CUSTOM=$(pwd)
-ZSH_THEME="spaceship"
-
-# HYPHEN_INSENSITIVE="true"
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-HIST_STAMPS="dd.mm.yyyy"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -18,6 +10,7 @@ plugins=(git brew osx git-extras hub history wd zsh-syntax-highlighting z)
 # User configuration
 
 #=== Theme ===#
+ZSH_THEME="spaceship"
 SPACESHIP_RUBY_SHOW="false"
 SPACESHIP_VENV_SHOW="false"
 SPACESHIP_NVM_SHOW="false"
@@ -27,6 +20,7 @@ HISTSIZE=32768;
 HISTFILESIZE=$HISTSIZE;
 HISTCONTROL=ignoredups;
 HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
+HIST_STAMPS="dd.mm.yyyy"
 
 #=== Oh My Zsh stuff ===#
 source $ZSH/oh-my-zsh.sh
