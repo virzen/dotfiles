@@ -30,12 +30,9 @@ alias gst='git stash'
 alias gsts='git stash save'
 alias gstp='git stash pop'
 
-alias topages='git push && git checkout gh-pages && git merge master && git push && git checkout master'
 alias gcl='git clone'
 alias gpl='git pull'
-alias gpr='git pull --rebase'
 alias gps='git push'
-alias gprs='git pull --rebase && git push'
 alias gpsnv='git push --no-verify'
 
 #=== terminal window ===#
