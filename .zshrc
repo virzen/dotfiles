@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh installation.
+#=== Path to oh-my-zsh installation ===#
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$(pwd)
 ZSH_THEME="spaceship"
@@ -17,15 +17,18 @@ plugins=(git brew osx git-extras hub history wd zsh-syntax-highlighting z)
 
 # User configuration
 
+#=== Theme ===#
 SPACESHIP_RUBY_SHOW="false"
 SPACESHIP_VENV_SHOW="false"
 SPACESHIP_NVM_SHOW="false"
 
+#=== History ===#
 HISTSIZE=32768;
 HISTFILESIZE=$HISTSIZE;
 HISTCONTROL=ignoredups;
 HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 
+#=== Oh My Zsh stuff ===#
 source $ZSH/oh-my-zsh.sh
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -38,9 +41,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # source ~/.aliases
 
+#=== rvm ===#
 export PATH="$PATH:$HOME/.rvm/bin"
 
+#=== nvm ===#
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+#=== Special treatment for zsh-syntax-highlighting plugin ===#
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
