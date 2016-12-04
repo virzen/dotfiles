@@ -1,8 +1,8 @@
 [user]
-	name = Wiktor Czajkowski
+  name = Wiktor Czajkowski
   email = wiktor.czajkowski@gmail.com
 [pull]
-	rebase = true
-	default = simple
+  rebase = true
+  default = simple
 [push]
-	default = simple
+  default = simple
