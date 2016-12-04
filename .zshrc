@@ -3,6 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 
 export ZSH_CUSTOM=$HOME/.dotfiles/custom
 
+plugins=(git brew osx git-extras hub history zsh-syntax-highlighting z)
+
 #=== Theme ===#
 ZSH_THEME="spaceship"
 SPACESHIP_RUBY_SHOW="false"
