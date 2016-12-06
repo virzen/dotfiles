@@ -15,6 +15,8 @@ alias gr='git reset'
 alias grs='git reset --soft'
 alias grh='git reset --hard'
 
+alias gu='git undo'
+
 alias gl='git log --oneline'
 alias gll='git log'
 
