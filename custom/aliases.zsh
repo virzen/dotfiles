@@ -42,7 +42,6 @@ alias gms='git merge --squash'
 alias gpl='git pull'
 
 alias gps='git push'
-alias gpsuo='git push -u origin'
 alias gpsnv='git push --no-verify'
 
 #=== terminal window ===#
