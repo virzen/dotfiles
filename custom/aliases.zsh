@@ -26,6 +26,8 @@ alias master='git checkout master'
 alias gd='git diff'
 alias gds='git diff --staged'
 
+alias gsh='git show'
+
 alias gst='git stash'
 alias gsts='git stash save'
 alias gstp='git stash pop'
