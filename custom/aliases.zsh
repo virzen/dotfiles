@@ -43,6 +43,13 @@ alias gpl='git pull'
 
 alias gps='git push'
 alias gpsnv='git push --no-verify'
+gpsuc() {
+  if CURRENT_BRANCH_NAME=$(git symbolic-ref --short -q HEAD) then
+    git push -u origin $CURRENT_BRANCH_NAME
+  else
+    echo "Cannot detect current branch."
+  fi
+}
 
 #=== terminal window ===#
 alias cl='clear'
