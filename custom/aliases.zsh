@@ -35,6 +35,10 @@ alias gstl='git stash list'
 alias gstsh='git stash show -p'
 
 alias gcl='git clone'
+
+alias gm='git merge'
+alias gms='git merge --squash'
+
 alias gpl='git pull'
 alias gps='git push'
 alias gpsnv='git push --no-verify'
