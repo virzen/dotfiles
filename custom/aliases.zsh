@@ -53,6 +53,9 @@ gpsuc() {
   fi
 }
 
+#=== atom ===#
+alias a='atom .'
+
 #=== terminal window ===#
 alias cl='clear'
 alias restart='exec zsh'
