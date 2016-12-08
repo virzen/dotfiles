@@ -15,6 +15,7 @@ heading "Installing missing utilities."
 # brew
 # zsh -> oh my zsh
 # nvm -> node
+# vim-plug
 
 heading "Creating symlinks"
 ln -sv "$DOTFILES_DIR/.zshrc" ~
