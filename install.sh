@@ -19,3 +19,4 @@ heading "Installing missing utilities."
 heading "Creating symlinks"
 ln -sv "$DOTFILES_DIR/.zshrc" ~
 ln -sv "$DOTFILES_DIR/.gitconfig" ~
+ln -sv "$DOTFILES_DIR/.vimrc" ~
