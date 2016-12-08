@@ -1,4 +1,11 @@
+source ./plugins.vim
+
+" Colors
 syntax on
+set background=dark
+colorscheme one
+
+" Line numbering
 set relativenumber
 set number
 
@@ -10,7 +17,13 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 " Show matching brackets when text indicator is over them
-set showmatch 
+set showmatch
+
+" Highlight search results
+set hlsearch
+
+" Start searching before pressing enter
+set incsearch
 
 " No annoying sound on errors
 set noerrorbells
@@ -18,7 +31,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
-"---------- Plugins ----------"
-call plug#begin('~/.vim/plugged')
-
-Plug 'editorconfig/editorconfig-vim'
+" Turn backup off
+set nobackup
+set nowb
+set noswapfile
