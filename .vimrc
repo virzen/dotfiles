@@ -11,3 +11,9 @@ set whichwrap+=<,>,h,l
 
 " Show matching brackets when text indicator is over them
 set showmatch 
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
