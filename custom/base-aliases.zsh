@@ -6,6 +6,7 @@ alias vimrc='vim ~/.vimrc'
 alias restart='exec zsh'
 
 alias testping='ping 8.8.8.8'
+alias wifi_re='sudo ifconfig en0 down && sudo ifconfig en0 up'
 
 bs() {
   browser-sync start --server --files '**' --no-online --no-open $@ &
