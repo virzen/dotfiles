@@ -9,8 +9,8 @@ call plug#end()
 
 " Colors
 syntax on
-set background=dark
-colorscheme one
+" set background=dark
+" colorscheme one
 
 " Line numbering
 set relativenumber
