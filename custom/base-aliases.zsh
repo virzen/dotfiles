@@ -5,6 +5,8 @@ alias vimrc='vim ~/.vimrc'
 
 alias restart='exec zsh'
 
+alias testping='ping 8.8.8.8'
+
 bs() {
   browser-sync start --server --files '**' --no-online --no-open $@ &
 }
