@@ -8,3 +8,6 @@ set hidden
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
+
+" Show matching brackets when text indicator is over them
+set showmatch 
