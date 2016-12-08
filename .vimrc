@@ -17,3 +17,8 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
+
+"---------- Plugins ----------"
+call plug#begin('~/.vim/plugged')
+
+Plug 'editorconfig/editorconfig-vim'
