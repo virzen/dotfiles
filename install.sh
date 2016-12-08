@@ -17,5 +17,5 @@ heading "Installing missing utilities."
 # nvm -> node
 
 heading "Creating symlinks"
-ln -svf "$DOTFILES_DIR/.zshrc" ~
-ln -svf "$DOTFILES_DIR/.gitconfig" ~
+ln -sv "$DOTFILES_DIR/.zshrc" ~
+ln -sv "$DOTFILES_DIR/.gitconfig" ~
