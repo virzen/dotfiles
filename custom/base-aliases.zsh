@@ -2,6 +2,9 @@
 alias a='atom'
 alias v='vim'
 
+#=== config files ===#
+alias vimrc='vim ~/.vimrc'
+
 #=== terminal window ===#
 alias cl='clear'
 alias restart='exec zsh'
