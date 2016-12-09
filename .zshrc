@@ -23,6 +23,10 @@ HIST_STAMPS="dd.mm.yyyy"
 #=== Oh My Zsh stuff ===#
 source $ZSH/oh-my-zsh.sh
 
+#=== Default editor ===#
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 #=== rvm ===#
 export PATH="$PATH:$HOME/.rvm/bin"
 
