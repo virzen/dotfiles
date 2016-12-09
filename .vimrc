@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'scrooloose/nerdtree'
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim' }
 
 call plug#end()
@@ -15,6 +16,12 @@ colorscheme Earthsong Light
 "---------- Keybindings ----------"
 let mapleader = ' '
 map <leader>t :FZF<cr>
+map <leader>o :NERDTreeToggle<cr>
+
+
+"---------- NERDTree ----------"
+let NERDTreeQuitOnOpen=1
+
 
 "---------- fzf ----------"
 " TODO: show fzf window on the bottom of the scree
