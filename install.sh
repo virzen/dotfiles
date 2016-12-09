@@ -16,10 +16,6 @@ heading "Installing missing utilities."
 # zsh -> oh my zsh
 # nvm -> node
 
-# fzf
-brew install fzf
-/usr/local/opt/fzf/install
-
 heading "Creating symlinks"
 ln -svf "$DOTFILES_DIR/.zshrc" ~
 ln -svf "$DOTFILES_DIR/.gitconfig" ~
