@@ -12,7 +12,7 @@ call plug#end()
 
 "---------- Theme ----------"
 syntax on
-colorscheme Earthsong Light
+" colorscheme earthsong-light
 
 
 "---------- Keybindings ----------"
