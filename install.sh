@@ -24,7 +24,7 @@ brew install fzf
 /usr/local/opt/fzf/install
 
 heading "Creating symlinks"
-ln -sv "$DOTFILES_DIR/.zshrc" ~
-ln -sv "$DOTFILES_DIR/.gitconfig" ~
-ln -sv "$DOTFILES_DIR/.vimrc" ~
-ln -sv "$DOTFILES_DIR/.editorconfig" ~
+ln -svf "$DOTFILES_DIR/.zshrc" ~
+ln -svf "$DOTFILES_DIR/.gitconfig" ~
+ln -svf "$DOTFILES_DIR/.vimrc" ~
+ln -svf "$DOTFILES_DIR/.editorconfig" ~
