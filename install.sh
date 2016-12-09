@@ -16,6 +16,8 @@ heading "Installing missing utilities."
 # zsh -> oh my zsh
 # nvm -> node
 # vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 heading "Creating symlinks"
 ln -sv "$DOTFILES_DIR/.zshrc" ~
