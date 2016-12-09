@@ -1,16 +1,16 @@
 "---------- Plugins ----------"
 call plug#begin('~/.vim/plugged')
 
-" Plug 'rakr/vim-one'
 Plug 'editorconfig/editorconfig-vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'daylerees/colour-schemes', { 'rtp': 'vim' }
 
 call plug#end()
 
 "---------- Theme ----------"
 syntax on
-" set background=dark
-" colorscheme one
+colorscheme Earthsong Light
+
 
 "---------- Keybindings ----------"
 let mapleader = ' '
