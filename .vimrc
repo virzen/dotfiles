@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'rakr/vim-one'
 Plug 'editorconfig/editorconfig-vim'
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 call plug#end()
 "---------- /Plugins ----------"

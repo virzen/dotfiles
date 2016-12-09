@@ -19,6 +19,10 @@ heading "Installing missing utilities."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# fzf
+brew install fzf
+/usr/local/opt/fzf/install
+
 heading "Creating symlinks"
 ln -sv "$DOTFILES_DIR/.zshrc" ~
 ln -sv "$DOTFILES_DIR/.gitconfig" ~

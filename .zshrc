@@ -32,3 +32,5 @@ export NVM_DIR="$HOME/.nvm"
 
 #=== Special treatment for zsh-syntax-highlighting plugin ===#
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
