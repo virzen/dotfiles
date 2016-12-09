@@ -1,4 +1,4 @@
-"---------- Plugins ----------"
+"=== Plugins ==="
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
@@ -9,11 +9,11 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
 
-"---------- Theme ----------"
+"=== Theme ==="
 syntax on
 
 
-"---------- Keybindings ----------"
+"=== Keybindings ==="
 let mapleader = ' '
 map <leader>w :w<cr>
 map <leader>q :q<cr>
@@ -23,21 +23,21 @@ map <S-j> 10j
 map <S-k> 10k
 
 
-"---------- NERDTree ----------"
+"=== NERDTree ==="
 let NERDTreeQuitOnOpen=1
 
 
-"---------- fzf ----------"
+"=== fzf ==="
 let g:fzf_layout = { 'down': '~40%' }
 
 
-"---------- gitgutter ----------"
+"=== gitgutter ==="
 let g:gitgutter_sign_column_always = 1
 let g:gitgutter_realtime = 1
 set updatetime=250
 
 
-"---------- Other ----------"
+"=== Other ==="
 " Necessary for lots of cool vim things
 set nocompatible
 
