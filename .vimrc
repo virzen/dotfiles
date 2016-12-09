@@ -30,12 +30,11 @@ let NERDTreeQuitOnOpen=1
 
 
 "---------- fzf ----------"
-" TODO: show fzf window on the bottom of the scree
-" becuase the command bellow does not work
 let g:fzf_layout = { 'down': '~40%' }
 
-"---------- Other settings ----------"
-" Necesary for lots of cool vim things
+
+"---------- Other ----------"
+" Necessary for lots of cool vim things
 set nocompatible
 
 " Line numbering
