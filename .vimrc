@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdtree'
-Plug 'daylerees/colour-schemes', { 'rtp': 'vim' }
 Plug 'airblade/vim-gitgutter'
 
 call plug#end()
@@ -12,7 +11,6 @@ call plug#end()
 
 "---------- Theme ----------"
 syntax on
-" colorscheme earthsong-light
 
 
 "---------- Keybindings ----------"
