@@ -17,8 +17,12 @@ syntax on
 
 "---------- Keybindings ----------"
 let mapleader = ' '
+map <leader>w :w<cr>
+map <leader>q :q<cr>
 map <leader>t :FZF<cr>
 map <leader>o :NERDTreeToggle<cr>
+map <S-j> 10j
+map <S-k> 10k
 
 
 "---------- NERDTree ----------"
