@@ -15,9 +15,6 @@ heading "Installing missing utilities."
 # brew
 # zsh -> oh my zsh
 # nvm -> node
-# vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # fzf
 brew install fzf
