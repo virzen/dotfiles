@@ -9,6 +9,7 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
+
 "---------- Theme ----------"
 syntax on
 colorscheme Earthsong Light
