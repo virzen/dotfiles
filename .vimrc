@@ -33,6 +33,11 @@ let NERDTreeQuitOnOpen=1
 let g:fzf_layout = { 'down': '~40%' }
 
 
+"---------- gitgutter ----------"
+let g:gitgutter_realtime = 1
+set updatetime=250
+
+
 "---------- Other ----------"
 " Necessary for lots of cool vim things
 set nocompatible
