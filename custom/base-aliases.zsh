@@ -13,6 +13,8 @@ bs() {
   browser-sync start --server --files '**' --no-online --no-open $@ &
 }
 
+alias fstart='foreman start -f Procfile.dev'
+
 alias rserv='bundle exec rails server'
 alias rmg='rails db:migrate RAILS_ENV=development'
 

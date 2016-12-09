@@ -6,12 +6,24 @@ Plug 'editorconfig/editorconfig-vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 call plug#end()
-"---------- /Plugins ----------"
 
-" Colors
+"---------- Theme ----------"
 syntax on
 " set background=dark
 " colorscheme one
+
+"---------- Keybindings ----------"
+let mapleader = ' '
+map <leader>t :FZF<cr>
+
+"---------- fzf ----------"
+" TODO: show fzf window on the bottom of the scree
+" becuase the command bellow does not work
+let g:fzf_layout = { 'down': '~40%' }
+
+"---------- Other settings ----------"
+" Necesary for lots of cool vim things
+set nocompatible
 
 " Line numbering
 set relativenumber
@@ -19,6 +31,9 @@ set number
 
 " A buffer becomes hidden when it is abandoned
 set hidden
+
+" Show current file info in the bottom bar
+set ruler
 
 " Configure backspace so it acts as it should
 set backspace=eol,start,indent
