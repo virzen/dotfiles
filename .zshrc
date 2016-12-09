@@ -1,17 +1,19 @@
 #=== Path to oh-my-zsh installation ===#
 export ZSH=$HOME/.oh-my-zsh
 
-# FIXME: Use script's directory, since .dotfiles doesn't need to be in
-# user's home dir
+# FIXME
 export ZSH_CUSTOM=$HOME/Workspace/dotfiles/custom
 
+
 plugins=(git brew osx git-extras hub history zsh-syntax-highlighting z)
+
 
 #=== Theme ===#
 ZSH_THEME="spaceship"
 SPACESHIP_RUBY_SHOW="false"
 SPACESHIP_VENV_SHOW="false"
 SPACESHIP_NVM_SHOW="false"
+
 
 #=== History ===#
 HISTSIZE=32768;
@@ -20,22 +22,28 @@ HISTCONTROL=ignoredups;
 HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 HIST_STAMPS="dd.mm.yyyy"
 
+
 #=== Oh My Zsh stuff ===#
 source $ZSH/oh-my-zsh.sh
+
 
 #=== Default editor ===#
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+
 #=== rvm ===#
 export PATH="$PATH:$HOME/.rvm/bin"
+
 
 #=== nvm ===#
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+
 #=== Special treatment for zsh-syntax-highlighting plugin ===#
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 
 #=== fzf ===#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
