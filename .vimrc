@@ -32,6 +32,7 @@ let g:fzf_layout = { 'down': '~40%' }
 
 
 "---------- gitgutter ----------"
+let g:gitgutter_sign_column_always = 1
 let g:gitgutter_realtime = 1
 set updatetime=250
 
