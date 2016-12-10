@@ -5,12 +5,15 @@ Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'rakr/vim-one'
 
 call plug#end()
 
 
 "=== Theme ==="
 syntax on
+set background=dark
+colorscheme one
 
 
 "=== Keybindings ==="
