@@ -1,10 +1,10 @@
 "=== Plugins ==="
 call plug#begin('~/.vim/plugged')
 
-Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
@@ -12,8 +12,7 @@ call plug#end()
 
 "=== Theme ==="
 syntax on
-set background=dark
-colorscheme one
+colorscheme earthsong
 
 if (has("termguicolors"))
   set termguicolors
