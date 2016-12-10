@@ -15,6 +15,10 @@ syntax on
 set background=dark
 colorscheme one
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 
 "=== Keybindings ==="
 let mapleader = ' '
