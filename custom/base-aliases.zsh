@@ -1,6 +1,3 @@
-alias a='atom'
-alias v='vim'
-
 alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
 # FIXME
