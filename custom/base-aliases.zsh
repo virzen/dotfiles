@@ -9,6 +9,11 @@ alias gals='vim ~/Workspace/dotfiles/custom/git-aliases.zsh'
 
 alias restart='exec zsh'
 
+fsw() {
+  fswatch $2 | xargs -n 1 $1
+}
+alias fswp='fsw python'
+
 alias testping='ping 8.8.8.8'
 alias wifi_re='sudo ifconfig en0 down && sudo ifconfig en0 up'
 
