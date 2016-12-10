@@ -1,11 +1,11 @@
 "=== Plugins ==="
 call plug#begin('~/.vim/plugged')
 
+Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'rakr/vim-one'
 
 call plug#end()
 
