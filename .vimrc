@@ -30,10 +30,6 @@ map <S-k> 10k
 let NERDTreeQuitOnOpen=1
 
 
-"=== fzf ==="
-let g:fzf_layout = { 'down': '~40%' }
-
-
 "=== gitgutter ==="
 let g:gitgutter_sign_column_always = 1
 let g:gitgutter_realtime = 1
