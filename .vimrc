@@ -27,6 +27,7 @@ map <leader>o :NERDTreeToggle<cr>
 
 "=== NERDTree ==="
 let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
 
 
 "=== gitgutter ==="
