@@ -51,6 +51,10 @@ set hidden
 " Show current file info in the bottom bar
 set ruler
 
+" Open new split panes to right and bottom
+set splitbelow
+set splitright
+
 " Configure backspace so it acts as it should
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
