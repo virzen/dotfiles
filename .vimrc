@@ -55,6 +55,7 @@ set number
 set hidden
 
 " Show current file info in the bottom bar
+set laststatus=2
 set ruler
 
 " Open new split panes to right and bottom
