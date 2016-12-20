@@ -40,6 +40,7 @@ alias gcl='git clone'
 
 alias gm='git merge'
 alias gms='git merge --squash'
+alias gmfm='git checkout master && git pull && git checkout - && git merge master'
 
 alias gpl='git pull'
 
