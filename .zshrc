@@ -4,8 +4,8 @@ export ZSH=$HOME/.oh-my-zsh
 # FIXME
 export ZSH_CUSTOM=$HOME/Workspace/dotfiles/custom
 
-
-plugins=(git brew osx git-extras hub history zsh-syntax-highlighting z)
+export NVM_LAZY_LOAD=true
+plugins=(git brew osx git-extras hub history zsh-syntax-highlighting z zsh-nvm)
 
 
 #=== Theme ===#
@@ -35,11 +35,6 @@ export EDITOR="$VISUAL"
 
 #=== rvm ===#
 export PATH="$PATH:$HOME/.rvm/bin"
-
-
-#=== nvm ===#
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
 
 
 #=== Special treatment for zsh-syntax-highlighting plugin ===#
