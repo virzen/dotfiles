@@ -24,6 +24,7 @@ endif
 let mapleader = ' '
 map <leader>t :FZF<cr>
 map <leader>o :NERDTreeToggle<cr>
+map <leader>\ :NERDTreeFind<cr>
 
 " Split pane navigation
 nnoremap <C-J> <C-W><C-J>
