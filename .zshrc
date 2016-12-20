@@ -24,6 +24,7 @@ HIST_STAMPS="dd.mm.yyyy"
 
 
 #=== Oh My Zsh stuff ===#
+DISABLE_UPDATE_PROMPT=true
 source $ZSH/oh-my-zsh.sh
 
 
