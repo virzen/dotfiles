@@ -63,6 +63,9 @@ set ruler
 set splitbelow
 set splitright
 
+" Copy to system clipboard
+set clipboard=unnamed
+
 " Configure backspace so it acts as it should
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
