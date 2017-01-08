@@ -5,6 +5,7 @@ alias bals='vim ~/Workspace/dotfiles/custom/base-aliases.zsh'
 alias gals='vim ~/Workspace/dotfiles/custom/git-aliases.zsh'
 
 alias restart='exec zsh'
+alias :q='exit'
 
 fsw() {
   fswatch $2 | xargs -n 1 $1
