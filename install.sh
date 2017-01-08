@@ -21,4 +21,4 @@ ln -svf "$DOTFILES_DIR/.zshrc" ~
 ln -svf "$DOTFILES_DIR/.gitconfig" ~
 ln -svf "$DOTFILES_DIR/.vimrc" ~
 ln -svf "$DOTFILES_DIR/.editorconfig" ~
-ln -svf "$DOTFILES_DIR/com.googlecode.iterm2.plist" ~
+ln -svf "$DOTFILES_DIR/.tmux.conf" ~
