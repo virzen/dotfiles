@@ -10,6 +10,7 @@ fsw() {
   fswatch $2 | xargs -n 1 $1
 }
 alias fswpy='fsw python'
+alias fswpy3='fsw python3'
 
 alias testping='ping 8.8.8.8'
 alias wifi_re='sudo ifconfig en0 down && sudo ifconfig en0 up'
