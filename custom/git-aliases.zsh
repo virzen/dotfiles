@@ -34,16 +34,17 @@ alias gstp='git stash pop'
 alias gstl='git stash list'
 alias gstsh='git stash show -p'
 
-alias gcl='git clone'
+alias gpl='git pull'
+
+alias gps='git push'
+alias gpsnv='git push --no-verify'
 
 alias gm='git merge'
 alias gms='git merge --squash'
 alias gmfm='git checkout master && git pull && git checkout - && git merge master'
 
-alias gpl='git pull'
+alias gcl='git clone'
 
-alias gps='git push'
-alias gpsnv='git push --no-verify'
 gpsuc() {
   if CURRENT_BRANCH_NAME=$(git symbolic-ref --short -q HEAD) then
     git push -u origin $CURRENT_BRANCH_NAME
