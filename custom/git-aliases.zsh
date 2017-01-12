@@ -6,7 +6,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gap='git add --patch'
 
-alias gc='git commit'
+alias gc='git commit --verbose'
 alias gcm='git commit -m'
 alias gca='git commit -a'
 alias gcam='git commit -am'
