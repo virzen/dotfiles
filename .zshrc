@@ -43,6 +43,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #=== fzf ===#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='--height 40%'
 
 export FZF_COMPLETION_TRIGGER=''
 bindkey '^T' fzf-completion
