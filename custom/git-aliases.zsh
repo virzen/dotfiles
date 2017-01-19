@@ -8,6 +8,7 @@ alias gap='git add --patch'
 
 alias gc='git commit --verbose'
 alias gcm='git commit -m'
+alias gc!='git commit --amend'
 
 alias gr='git reset'
 alias grs='git reset --soft'
