@@ -282,9 +282,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 289 620 392 0 0 1280 777 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>408 1049 796 473 -279 800 1920 1080 </string>
+	<string>296 172 796 473 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 650 502 0 0 1280 800 </string>
+	<string>0 4 570 502 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-32 907 650 502 -279 800 1920 1057 </string>
 	<key>NeverWarnAboutOverrides</key>
@@ -556,10 +556,31 @@
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
+				<key>0x4a-0x120000</key>
+				<dict>
+					<key>Action</key>
+					<integer>2</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0x4b-0x120000</key>
+				<dict>
+					<key>Action</key>
+					<integer>0</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0x6a-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>31</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
 				<key>0x6b-0x100000</key>
 				<dict>
 					<key>Action</key>
-					<integer>13</integer>
+					<integer>30</integer>
 					<key>Text</key>
 					<string></string>
 				</dict>
@@ -577,40 +598,12 @@
 					<key>Text</key>
 					<string>b</string>
 				</dict>
-				<key>0xf702-0x300000</key>
-				<dict>
-					<key>Action</key>
-					<integer>31</integer>
-					<key>Text</key>
-					<string></string>
-				</dict>
-				<key>0xf702-0x380000</key>
-				<dict>
-					<key>Action</key>
-					<integer>2</integer>
-					<key>Text</key>
-					<string></string>
-				</dict>
 				<key>0xf703-0x280000</key>
 				<dict>
 					<key>Action</key>
 					<integer>10</integer>
 					<key>Text</key>
 					<string>f</string>
-				</dict>
-				<key>0xf703-0x300000</key>
-				<dict>
-					<key>Action</key>
-					<integer>30</integer>
-					<key>Text</key>
-					<string></string>
-				</dict>
-				<key>0xf703-0x380000</key>
-				<dict>
-					<key>Action</key>
-					<integer>0</integer>
-					<key>Text</key>
-					<string></string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -757,7 +750,7 @@
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
-			<integer>0</integer>
+			<integer>-2</integer>
 			<key>Scrollback Lines</key>
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
@@ -917,7 +910,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-08T00:28:35Z</date>
+	<date>2017-01-19T09:58:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
