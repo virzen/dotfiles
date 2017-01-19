@@ -23,4 +23,4 @@ ln -svf "$DOTFILES_DIR/.vimrc" ~
 ln -svf "$DOTFILES_DIR/.editorconfig" ~
 ln -svf "$DOTFILES_DIR/.tmux.conf" ~
 ln -svf "$DOTFILES_DIR/.agignore" ~
-cp "$DOTFILES_DIR/com.googlecode.iterm2.plist" ~
+cp -v "$DOTFILES_DIR/com.googlecode.iterm2.plist" ~
