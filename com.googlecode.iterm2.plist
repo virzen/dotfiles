@@ -239,12 +239,10 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>/Applications</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 459}</string>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -276,17 +274,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>632 110 582 305 0 0 1280 777 </string>
-	<key>NSWindow Frame Preferences</key>
-	<string>269 168 606 456 0 0 1280 777 </string>
-	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 289 620 392 0 0 1280 777 </string>
+	<string>733 303 445 77 0 0 1280 800 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>-40 939 606 456 -309 800 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>296 172 796 473 0 0 1280 800 </string>
+	<string>167 1065 796 473 -309 800 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 570 502 0 0 1280 800 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-32 907 650 502 -279 800 1920 1057 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>NeverWarnAboutOverrides_selection</key>
@@ -570,7 +564,7 @@
 					<key>Text</key>
 					<string></string>
 				</dict>
-				<key>0x6a-0x100000</key>
+				<key>0x68-0x100000</key>
 				<dict>
 					<key>Action</key>
 					<integer>31</integer>
@@ -578,6 +572,13 @@
 					<string></string>
 				</dict>
 				<key>0x6b-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>13</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0x6c-0x100000</key>
 				<dict>
 					<key>Action</key>
 					<integer>30</integer>
@@ -821,20 +822,22 @@
 			<string>/Users/wiktor</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>FCD0FF18-158D-4167-8B68-FC0D02BC7270</string>
+	<string>8E0F00A8-1226-4D48-9C46-5009E70CC248</string>
 	<key>NoSyncLastTipTime</key>
-	<real>503274611.779441</real>
+	<real>503314990.05325699</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>500942062.74378902</real>
+	<real>500812496.87899101</real>
 	<key>NoSyncTipsDisabled</key>
 	<true/>
 	<key>NoSyncTipsToNotShow</key>
@@ -855,6 +858,9 @@
 		<string>0012</string>
 		<string>0013</string>
 		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -894,23 +900,21 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/virzen</string>
+	<string>/Users/wiktor</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
-	<key>SUAutomaticallyUpdate</key>
-	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=37</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=60</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-19T09:58:25Z</date>
+	<date>2017-01-19T13:26:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
