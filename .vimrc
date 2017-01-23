@@ -34,6 +34,9 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 
+"=== Custom commands ==="
+command Bda bufdo bd
+
 "=== NERDTree ==="
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
