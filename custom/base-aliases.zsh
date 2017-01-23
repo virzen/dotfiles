@@ -1,5 +1,6 @@
 alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
+
 # FIXME
 alias bals='vim ~/Workspace/dotfiles/custom/base-aliases.zsh'
 alias gals='vim ~/Workspace/dotfiles/custom/git-aliases.zsh'
