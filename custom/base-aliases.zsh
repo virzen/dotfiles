@@ -34,6 +34,18 @@ alias wifi_re='sudo ifconfig en0 down && sudo ifconfig en0 up'
 #=== SSH ===#
 alias pubkey='cat ~/.ssh/id_rsa.pub | pbcopy && echo "Public key copied to clipboard!"'
 
+ssh-generate() {
+  if [ -z $1 ]; then
+    echo "You must provide email adress as the first argument."
+    return 1
+  fi
+
+  ssh-keygen -t rsa -b 4096 -C $1
+  ssh-add ~/.ssh/id_rsa
+  pubkey
+}
+
+
 #=== RoR ===#
 alias fstart='foreman start -f Procfile.dev'
 
