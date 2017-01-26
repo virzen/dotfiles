@@ -24,4 +24,7 @@ ln -svf "$DOTFILES_DIR/.editorconfig" ~
 ln -svf "$DOTFILES_DIR/.tmux.conf" ~
 ln -svf "$DOTFILES_DIR/.agignore" ~
 ln -svf "$DOTFILES_DIR/.npmrc" ~
+mkdir -v ~/.config/
+mkdir -v ~/.config/karabiner/
+ln -svf "$DOTFILES_DIR/karabiner.json" ~/.config/karabiner/
 cp -v "$DOTFILES_DIR/com.googlecode.iterm2.plist" ~
