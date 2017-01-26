@@ -17,6 +17,7 @@ alias grh='git reset --hard'
 alias gu='git undo'
 
 alias gl='git log --oneline'
+alias glm='git log --oneline --author="Wiktor Czajkowski"'
 alias gll='git log'
 
 alias gco='git checkout'
