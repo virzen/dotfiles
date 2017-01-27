@@ -6,8 +6,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
+
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim/' }
-Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
