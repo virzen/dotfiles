@@ -8,7 +8,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 
 Plug 'daylerees/colour-schemes', { 'rtp': 'vim/' }
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'w0ng/vim-hybrid'
+"Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
