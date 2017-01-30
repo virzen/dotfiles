@@ -46,9 +46,6 @@ ssh-generate() {
 }
 
 
-#=== RoR ===#
-alias fstart='foreman start -f Procfile.dev'
-
 alias rserv='bundle exec rails server'
 alias rmg='rails db:migrate RAILS_ENV=development'
 alias rmgt='rails db:migrate RAILS_ENV=test'
