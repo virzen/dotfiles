@@ -41,6 +41,9 @@ alias gpl='git pull'
 alias gps='git push'
 alias gpsnv='git push --no-verify'
 
+alias grb='git rebase'
+alias grbi'git rebase -i'
+
 alias gm='git merge'
 alias gms='git merge --squash'
 alias gmfm='git checkout master && git pull && git checkout - && git merge master'
