@@ -44,6 +44,10 @@ export EDITOR="$VISUAL"
 #=== rvm ===#
 export PATH="$PATH:$HOME/.rvm/bin"
 
+#=== Aliases ===#
+source $ZSH_CUSTOM/base-aliases.zsh
+source $ZSH_CUSTOM/git-aliases.zsh
+
 
 #=== Special treatment for zsh-syntax-highlighting plugin ===#
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
