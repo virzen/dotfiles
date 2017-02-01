@@ -1,2 +1,2 @@
 *.swp
-custom/secret-aliases.zsh
+**/secret-aliases.zsh
