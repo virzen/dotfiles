@@ -27,6 +27,7 @@ zplug "lukechilds/zsh-nvm"
 zplug "knu/z", use:z.sh, defer:2
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "djui/alias-tips"
+zplug "zsh-users/zsh-history-substring-search"
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
