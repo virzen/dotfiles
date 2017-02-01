@@ -1,5 +1,5 @@
-# FIXME: use relative path to custom dir
-export ZSH_CUSTOM=$HOME/Workspace/dotfiles/custom
+# FIXME: use relative path instead of hardcoding it
+export DOTFILES_DIR=$HOME/Workspace/dotfiles
 
 
 #=== Theme ===#
@@ -43,8 +43,8 @@ export EDITOR="$VISUAL"
 
 
 #=== Aliases ===#
-source $ZSH_CUSTOM/base-aliases.zsh
-source $ZSH_CUSTOM/git-aliases.zsh
+source $DOTFILES_DIR/base-aliases.zsh
+source $DOTFILES_DIR/git-aliases.zsh
 
 
 #=== rvm ===#
