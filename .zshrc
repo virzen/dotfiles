@@ -2,6 +2,10 @@
 export DOTFILES_DIR=$HOME/Workspace/dotfiles
 
 
+#=== ZSH settings ===#
+zstyle ':completion:*' menu select
+
+
 #=== Theme ===#
 ZSH_THEME="spaceship"
 SPACESHIP_RUBY_SHOW="false"
