@@ -3,6 +3,12 @@ alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
 
 
+#=== Aliases ===#
+# FIXME
+alias bals='vim ~/Workspace/dotfiles/custom/base-aliases.zsh'
+alias gals='vim ~/Workspace/dotfiles/custom/git-aliases.zsh'
+
+
 #=== Shell ===#
 alias restart='exec zsh'
 alias :q='exit'
