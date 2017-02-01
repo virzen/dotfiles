@@ -42,7 +42,7 @@ alias gps='git push'
 alias gpsnv='git push --no-verify'
 
 alias grb='git rebase'
-alias grbi'git rebase -i'
+alias grbi='git rebase -i'
 
 alias gm='git merge'
 alias gms='git merge --squash'
