@@ -1,11 +1,5 @@
-#=== Path to oh-my-zsh installation ===#
-export ZSH=$HOME/.oh-my-zsh
-
 # FIXME
 export ZSH_CUSTOM=$HOME/Workspace/dotfiles/custom
-
-export NVM_LAZY_LOAD=true
-plugins=(git brew osx git-extras hub history zsh-syntax-highlighting z zsh-nvm)
 
 
 #=== Theme ===#
@@ -23,9 +17,23 @@ HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 HIST_STAMPS="dd.mm.yyyy"
 
 
-#=== Oh My Zsh stuff ===#
-DISABLE_UPDATE_PROMPT=true
-source $ZSH/oh-my-zsh.sh
+#=== Plugins ===#
+#plugins=(git brew osx git-extras history zsh-syntax-highlighting z zsh-nvm)
+export NVM_LAZY_LOAD=true
+
+source ~/.zplug/init.zsh
+zplug "denysdovhan/spaceship-zsh-theme", as:theme
+zplug "lukechilds/zsh-nvm"
+zplug "knu/z", use:z.sh, defer:2
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "djui/alias-tips"
+
+# Install packages that have not been installed yet
+if ! zplug check --verbose; then
+    zplug install
+fi
+
+zplug load
 
 
 #=== Default editor ===#
