@@ -6,6 +6,7 @@ alias zshrc='vim ~/.zshrc'
 #=== Shell ===#
 alias restart='exec zsh'
 alias :q='exit'
+alias l='ls -la'
 
 
 #=== File watching ===#
