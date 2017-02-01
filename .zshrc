@@ -41,14 +41,13 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 
-#=== rvm ===#
-export PATH="$PATH:$HOME/.rvm/bin"
-
 #=== Aliases ===#
 source $ZSH_CUSTOM/base-aliases.zsh
 source $ZSH_CUSTOM/git-aliases.zsh
 
 
+#=== rvm ===#
+export PATH="$PATH:$HOME/.rvm/bin"
 
 
 #=== fzf ===#
