@@ -31,7 +31,7 @@ zplug "zsh-users/zsh-history-substring-search"
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
-    zplug install
+  zplug install
 fi
 
 zplug load
