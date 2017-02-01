@@ -1,4 +1,4 @@
-# FIXME
+# FIXME: use relative path to custom dir
 export ZSH_CUSTOM=$HOME/Workspace/dotfiles/custom
 
 
