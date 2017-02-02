@@ -23,7 +23,10 @@ alias gll='git log'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias pages='git checkout gh-pages'
-alias master='git checkout master'
+alias gcom='git checkout master'
+
+alias gb='git branch'
+alias gbd='git branch -d'
 
 alias gd='git diff'
 alias gds='git diff --staged'
