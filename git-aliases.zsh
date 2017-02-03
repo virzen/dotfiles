@@ -1,6 +1,6 @@
 #=== git ===#
-alias gst='git status'
 alias gs='git status --short'
+alias gsl='git status'
 
 alias ga='git add'
 alias gaa='git add --all'
@@ -34,7 +34,9 @@ alias gds='git diff --staged'
 alias gsh='git show'
 
 alias gst='git stash'
+alias gsta='git stash apply'
 alias gsts='git stash save'
+alias gstd='git stash drop'
 alias gstp='git stash pop'
 alias gstl='git stash list'
 alias gstsh='git stash show -p'
