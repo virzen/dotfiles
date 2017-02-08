@@ -36,7 +36,6 @@
             "selected": true,
             "simple_modifications": {
                 "caps_lock": "escape",
-                "escape": "caps_lock",
                 "grave_accent_and_tilde": "non_us_backslash",
                 "non_us_backslash": "grave_accent_and_tilde",
                 "right_command": "right_option",
