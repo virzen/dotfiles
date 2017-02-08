@@ -87,6 +87,8 @@ set hlsearch
 
 " Start searching before pressing enter
 set incsearch
+set ignorecase
+set smartcase
 
 " No annoying sound on errors
 set noerrorbells
