@@ -6,6 +6,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'sirver/ultisnips'
 
 Plug 'w0ng/vim-hybrid' " theme
 
@@ -24,11 +25,16 @@ nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
 
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
 
 
 " Custom commands
 command Bda bufdo bd
 command Src source %
+command Snips UltiSnipsEdit
 
 
 "=== Plugins' settings ==="
@@ -40,6 +46,9 @@ let NERDTreeShowHidden=1
 let g:gitgutter_sign_column_always = 1
 let g:gitgutter_realtime = 1
 set updatetime=250
+
+" UltiSnips
+let g:UltiSnipsUsePythonVersion = 2
 
 " hybrid theme
 syntax on
