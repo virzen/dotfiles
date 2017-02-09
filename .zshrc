@@ -27,11 +27,11 @@ export NVM_LAZY_LOAD=true
 
 source ~/.zplug/init.zsh
 zplug "denysdovhan/spaceship-zsh-theme", as:theme
-zplug "lukechilds/zsh-nvm"
-zplug "knu/z", use:z.sh, defer:2
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "djui/alias-tips"
-zplug "zsh-users/zsh-history-substring-search"
+zplug "lukechilds/zsh-nvm"
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-history-substring-search", defer:2
+zplug "knu/z", use:z.sh, defer:2
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
