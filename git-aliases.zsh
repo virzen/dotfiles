@@ -48,6 +48,7 @@ alias gpsnv='git push --no-verify'
 
 alias grb='git rebase'
 alias grbi='git rebase -i'
+alias grbicb='git rebase -i `git merge-base HEAD master`'
 
 alias gm='git merge'
 alias gms='git merge --squash'
