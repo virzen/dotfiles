@@ -6,7 +6,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'sirver/ultisnips'
 
 Plug 'w0ng/vim-hybrid' " theme
 
@@ -27,16 +26,9 @@ nnoremap <c-h> <c-w><c-h>
 
 nnoremap U :echo "<<===== CHECK CAPS LOCK =====>>"<CR>
 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
-
-
 " Custom commands
 command Bda bufdo bd
 command Src source %
-command Snips UltiSnipsEdit
 
 
 "=== Plugins' settings ==="
