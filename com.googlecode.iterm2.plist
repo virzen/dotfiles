@@ -493,12 +493,14 @@
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>651 205 445 77 0 0 1280 800 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>327 1316 620 392 -323 800 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>-40 939 606 456 -309 800 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>434 1010 796 473 -323 800 1920 1080 </string>
+	<string>434 952 1016 502 -323 800 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-323 804 1280 796 -323 800 1920 1080 </string>
+	<string>-323 810 1920 1070 -323 800 1920 1080 </string>
 	<key>NeverWarnAboutOverrides</key>
 	<true/>
 	<key>NeverWarnAboutOverrides_selection</key>
@@ -768,17 +770,31 @@
 			</array>
 			<key>Keyboard Map</key>
 			<dict>
+				<key>0x48-0x120000</key>
+				<dict>
+					<key>Action</key>
+					<integer>51</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
 				<key>0x4a-0x120000</key>
 				<dict>
 					<key>Action</key>
-					<integer>2</integer>
+					<integer>49</integer>
 					<key>Text</key>
 					<string></string>
 				</dict>
 				<key>0x4b-0x120000</key>
 				<dict>
 					<key>Action</key>
-					<integer>0</integer>
+					<integer>50</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0x4c-0x120000</key>
+				<dict>
+					<key>Action</key>
+					<integer>52</integer>
 					<key>Text</key>
 					<string></string>
 				</dict>
@@ -1138,7 +1154,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-10T12:09:44Z</date>
+	<date>2017-02-14T10:24:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1175,9 +1191,9 @@
 				<key>Old Width</key>
 				<real>400</real>
 				<key>Old X Origin</key>
-				<real>131</real>
+				<real>-97</real>
 				<key>Old Y Origin</key>
-				<real>73</real>
+				<real>935</real>
 				<key>Saved Window Type</key>
 				<integer>4</integer>
 				<key>Screen</key>
@@ -1446,7 +1462,7 @@
 												<real>0.72156862745098038</real>
 											</dict>
 											<key>Guid</key>
-											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
+											<string>2599840F-C63D-4169-944C-9A3C4F3EBC0B</string>
 											<key>Horizontal Spacing</key>
 											<real>0.95847844503012047</real>
 											<key>Idle Code</key>
@@ -1460,17 +1476,31 @@
 											</array>
 											<key>Keyboard Map</key>
 											<dict>
+												<key>0x48-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>51</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
 												<key>0x4a-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>2</integer>
+													<integer>49</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
 												<key>0x4b-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>0</integer>
+													<integer>50</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
+												<key>0x4c-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>52</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
@@ -1656,6 +1686,8 @@
 											<string>MesloLGL-RegularForPowerline 12</string>
 											<key>Option Key Sends</key>
 											<integer>2</integer>
+											<key>Original Guid</key>
+											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -1705,6 +1737,19 @@
 											<integer>0</integer>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.39493030309677124</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
+												<key>Green Component</key>
+												<real>0.3949236273765564</real>
+												<key>Red Component</key>
+												<real>0.39493542909622192</real>
+											</dict>
 											<key>Tags</key>
 											<array>
 												<string>mac</string>
@@ -1724,6 +1769,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<true/>
 											<key>Vertical Spacing</key>
 											<real>1.0478339137801205</real>
 											<key>Visual Bell</key>
@@ -1736,7 +1783,7 @@
 										<key>Bookmark Name</key>
 										<string>Virzen</string>
 										<key>Columns</key>
-										<integer>192</integer>
+										<integer>272</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -1756,9 +1803,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>51</integer>
+										<integer>52</integer>
 										<key>Server PID</key>
-										<integer>386</integer>
+										<integer>15715</integer>
 										<key>Session Default Name</key>
 										<string>Virzen</string>
 										<key>Session GUID</key>
@@ -1783,16 +1830,39 @@
 										<key>height</key>
 										<real>1058</real>
 										<key>width</key>
-										<real>1359</real>
+										<real>1920</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
 								</dict>
+							</array>
+							<key>View Type</key>
+							<string>Splitter</string>
+							<key>frame</key>
+							<dict>
+								<key>height</key>
+								<real>1058</real>
+								<key>width</key>
+								<real>1920</real>
+								<key>x</key>
+								<real>0.0</real>
+								<key>y</key>
+								<real>0.0</real>
+							</dict>
+							<key>isVertical</key>
+							<true/>
+						</dict>
+					</dict>
+					<dict>
+						<key>Root</key>
+						<dict>
+							<key>Subviews</key>
+							<array>
 								<dict>
 									<key>Is Active</key>
-									<integer>0</integer>
+									<integer>1</integer>
 									<key>Session</key>
 									<dict>
 										<key>Bookmark</key>
@@ -2045,7 +2115,7 @@
 												<real>0.72156862745098038</real>
 											</dict>
 											<key>Guid</key>
-											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
+											<string>85B45154-485E-4ADC-A4E8-B0CCC6DEC95F</string>
 											<key>Horizontal Spacing</key>
 											<real>0.95847844503012047</real>
 											<key>Idle Code</key>
@@ -2059,17 +2129,31 @@
 											</array>
 											<key>Keyboard Map</key>
 											<dict>
+												<key>0x48-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>51</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
 												<key>0x4a-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>2</integer>
+													<integer>49</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
 												<key>0x4b-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>0</integer>
+													<integer>50</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
+												<key>0x4c-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>52</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
@@ -2255,6 +2339,8 @@
 											<string>MesloLGL-RegularForPowerline 12</string>
 											<key>Option Key Sends</key>
 											<integer>2</integer>
+											<key>Original Guid</key>
+											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -2304,6 +2390,19 @@
 											<integer>0</integer>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.31300812959671021</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
+												<key>Green Component</key>
+												<real>0.32398685812950134</real>
+												<key>Red Component</key>
+												<real>0.96859133243560791</real>
+											</dict>
 											<key>Tags</key>
 											<array>
 												<string>mac</string>
@@ -2323,6 +2422,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<false/>
 											<key>Vertical Spacing</key>
 											<real>1.0478339137801205</real>
 											<key>Visual Bell</key>
@@ -2335,7 +2436,7 @@
 										<key>Bookmark Name</key>
 										<string>Virzen</string>
 										<key>Columns</key>
-										<integer>78</integer>
+										<integer>272</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -2355,13 +2456,13 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>51</integer>
+										<integer>52</integer>
 										<key>Server PID</key>
-										<integer>19278</integer>
+										<integer>17657</integer>
 										<key>Session Default Name</key>
 										<string>Virzen</string>
 										<key>Session GUID</key>
-										<string>1BB07D83-EF11-49CA-8B65-947755FC907D</string>
+										<string>8DB085D5-DCCA-41AA-AA12-CBBD94E47005</string>
 										<key>Session Name</key>
 										<string>Virzen</string>
 										<key>Session Window Title</key>
@@ -2371,7 +2472,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>TTY</key>
-										<string>/dev/ttys002</string>
+										<string>/dev/ttys004</string>
 										<key>Working Directory</key>
 										<string>/Users/wiktor/Workspace/***REMOVED***</string>
 									</dict>
@@ -2382,9 +2483,9 @@
 										<key>height</key>
 										<real>1058</real>
 										<key>width</key>
-										<real>560</real>
+										<real>1920</real>
 										<key>x</key>
-										<real>1360</real>
+										<real>0.0</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -2404,7 +2505,7 @@
 								<real>0.0</real>
 							</dict>
 							<key>isVertical</key>
-							<true/>
+							<false/>
 						</dict>
 					</dict>
 					<dict>
@@ -2667,7 +2768,7 @@
 												<real>0.72156862745098038</real>
 											</dict>
 											<key>Guid</key>
-											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
+											<string>834E5FD6-C406-4D7E-A316-79FD2DF72130</string>
 											<key>Horizontal Spacing</key>
 											<real>0.95847844503012047</real>
 											<key>Idle Code</key>
@@ -2681,17 +2782,31 @@
 											</array>
 											<key>Keyboard Map</key>
 											<dict>
+												<key>0x48-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>51</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
 												<key>0x4a-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>2</integer>
+													<integer>49</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
 												<key>0x4b-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>0</integer>
+													<integer>50</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
+												<key>0x4c-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>52</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
@@ -2877,6 +2992,8 @@
 											<string>MesloLGL-RegularForPowerline 12</string>
 											<key>Option Key Sends</key>
 											<integer>2</integer>
+											<key>Original Guid</key>
+											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -2926,6 +3043,19 @@
 											<integer>0</integer>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.24669140577316284</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
+												<key>Green Component</key>
+												<real>0.84237569570541382</real>
+												<key>Red Component</key>
+												<real>0.92485690116882324</real>
+											</dict>
 											<key>Tags</key>
 											<array>
 												<string>mac</string>
@@ -2945,6 +3075,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<false/>
 											<key>Vertical Spacing</key>
 											<real>1.0478339137801205</real>
 											<key>Visual Bell</key>
@@ -2957,7 +3089,7 @@
 										<key>Bookmark Name</key>
 										<string>Virzen</string>
 										<key>Columns</key>
-										<integer>76</integer>
+										<integer>95</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -2979,7 +3111,7 @@
 										<key>Rows</key>
 										<integer>51</integer>
 										<key>Server PID</key>
-										<integer>13187</integer>
+										<integer>15722</integer>
 										<key>Session Default Name</key>
 										<string>Virzen</string>
 										<key>Session GUID</key>
@@ -2993,7 +3125,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>TTY</key>
-										<string>/dev/ttys005</string>
+										<string>/dev/ttys002</string>
 										<key>Working Directory</key>
 										<string>/Users/wiktor/Workspace/***REMOVED***</string>
 									</dict>
@@ -3004,7 +3136,7 @@
 										<key>height</key>
 										<real>1058</real>
 										<key>width</key>
-										<real>542</real>
+										<real>677</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -3266,7 +3398,7 @@
 												<real>0.72156862745098038</real>
 											</dict>
 											<key>Guid</key>
-											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
+											<string>3D66E3EA-4496-4F3A-9E88-A30D47ADDCE8</string>
 											<key>Horizontal Spacing</key>
 											<real>0.95847844503012047</real>
 											<key>Idle Code</key>
@@ -3280,17 +3412,31 @@
 											</array>
 											<key>Keyboard Map</key>
 											<dict>
+												<key>0x48-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>51</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
 												<key>0x4a-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>2</integer>
+													<integer>49</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
 												<key>0x4b-0x120000</key>
 												<dict>
 													<key>Action</key>
-													<integer>0</integer>
+													<integer>50</integer>
+													<key>Text</key>
+													<string></string>
+												</dict>
+												<key>0x4c-0x120000</key>
+												<dict>
+													<key>Action</key>
+													<integer>52</integer>
 													<key>Text</key>
 													<string></string>
 												</dict>
@@ -3476,6 +3622,8 @@
 											<string>MesloLGL-RegularForPowerline 12</string>
 											<key>Option Key Sends</key>
 											<integer>2</integer>
+											<key>Original Guid</key>
+											<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
 											<key>Prompt Before Closing 2</key>
 											<false/>
 											<key>Right Option Key Sends</key>
@@ -3525,6 +3673,19 @@
 											<integer>0</integer>
 											<key>Sync Title</key>
 											<false/>
+											<key>Tab Color</key>
+											<dict>
+												<key>Alpha Component</key>
+												<real>1</real>
+												<key>Blue Component</key>
+												<real>0.24669140577316284</real>
+												<key>Color Space</key>
+												<string>Calibrated</string>
+												<key>Green Component</key>
+												<real>0.84237569570541382</real>
+												<key>Red Component</key>
+												<real>0.92485690116882324</real>
+											</dict>
 											<key>Tags</key>
 											<array>
 												<string>mac</string>
@@ -3544,6 +3705,8 @@
 											<true/>
 											<key>Use Non-ASCII Font</key>
 											<false/>
+											<key>Use Tab Color</key>
+											<false/>
 											<key>Vertical Spacing</key>
 											<real>1.0478339137801205</real>
 											<key>Visual Bell</key>
@@ -3556,7 +3719,7 @@
 										<key>Bookmark Name</key>
 										<string>Virzen</string>
 										<key>Columns</key>
-										<integer>195</integer>
+										<integer>176</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -3578,7 +3741,7 @@
 										<key>Rows</key>
 										<integer>51</integer>
 										<key>Server PID</key>
-										<integer>14908</integer>
+										<integer>15729</integer>
 										<key>Session Default Name</key>
 										<string>Virzen</string>
 										<key>Session GUID</key>
@@ -3592,7 +3755,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>TTY</key>
-										<string>/dev/ttys006</string>
+										<string>/dev/ttys003</string>
 										<key>Working Directory</key>
 										<string>/Users/wiktor/Workspace/***REMOVED***</string>
 									</dict>
@@ -3603,9 +3766,9 @@
 										<key>height</key>
 										<real>1058</real>
 										<key>width</key>
-										<real>1377</real>
+										<real>1242</real>
 										<key>x</key>
-										<real>543</real>
+										<real>678</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -3651,7 +3814,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.0.14</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
