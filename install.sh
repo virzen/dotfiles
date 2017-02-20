@@ -25,6 +25,7 @@ ln -svf "$DOTFILES_DIR/.editorconfig" ~
 ln -svf "$DOTFILES_DIR/.tmux.conf" ~
 ln -svf "$DOTFILES_DIR/.agignore" ~
 ln -svf "$DOTFILES_DIR/.npmrc" ~
+ln -svf "$DOTFILES_DIR/bin" ~
 mkdir -v ~/.config/
 mkdir -v ~/.config/karabiner/
 ln -svf "$DOTFILES_DIR/karabiner.json" ~/.config/karabiner/
