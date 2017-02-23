@@ -37,7 +37,9 @@ export EDITOR="$VISUAL"
 #=== Aliases ===#
 source $DOTFILES_DIR/base-aliases.zsh
 source $DOTFILES_DIR/git-aliases.zsh
-source $DOTFILES_DIR/secret-aliases.zsh
+if [[ -f $DOTFILES_DIR/secret-aliases.zsh ]]; then
+  source $DOTFILES_DIR/secret-aliases.zsh
+fi
 
 
 #=== rvm ===#
