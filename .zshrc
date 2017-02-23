@@ -20,7 +20,7 @@ HIST_STAMPS="dd.mm.yyyy"
 
 
 #=== Plugins ===#
-plugins=(git brew osx git-extras history zsh-syntax-highlighting z zsh-nvm)
+plugins=(git brew osx git-extras history zsh-syntax-highlighting z)
 
 
 #=== Oh My Zsh stuff ===#
@@ -56,3 +56,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 #=== Special treatment for zsh-syntax-highlighting plugin ===#
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
