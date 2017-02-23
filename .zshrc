@@ -1,9 +1,7 @@
 # FIXME: use relative path instead of hardcoding it
 export DOTFILES_DIR=$HOME/Workspace/dotfiles
-
-
-#=== ZSH settings ===#
-zstyle ':completion:*' menu select
+export ZSH_CUSTOM=$HOME/Workspace/dotfiles/custom
+export ZSH=$HOME/.oh-my-zsh
 
 
 #=== Theme ===#
@@ -22,23 +20,13 @@ HIST_STAMPS="dd.mm.yyyy"
 
 
 #=== Plugins ===#
-#plugins=(git brew osx git-extras history zsh-syntax-highlighting z zsh-nvm)
+plugins=(git brew osx git-extras history zsh-syntax-highlighting z zsh-nvm)
+
+
+#=== Oh My Zsh stuff ===#
 export NVM_LAZY_LOAD=true
-
-source ~/.zplug/init.zsh
-zplug "denysdovhan/spaceship-zsh-theme", as:theme
-zplug "djui/alias-tips"
-zplug "lukechilds/zsh-nvm"
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "zsh-users/zsh-history-substring-search", defer:2
-zplug "knu/z", use:z.sh, defer:2
-
-# Install packages that have not been installed yet
-if ! zplug check --verbose; then
-  zplug install
-fi
-
-zplug load
+DISABLE_UPDATE_PROMPT=true
+source $ZSH/oh-my-zsh.sh
 
 
 #=== Default editor ===#
