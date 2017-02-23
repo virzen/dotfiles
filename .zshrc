@@ -20,11 +20,11 @@ HIST_STAMPS="dd.mm.yyyy"
 
 
 #=== Plugins ===#
+export NVM_LAZY_LOAD=true
 plugins=(git brew osx git-extras history zsh-syntax-highlighting z)
 
 
 #=== Oh My Zsh stuff ===#
-export NVM_LAZY_LOAD=true
 DISABLE_UPDATE_PROMPT=true
 source $ZSH/oh-my-zsh.sh
 
