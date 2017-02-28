@@ -30,3 +30,5 @@ mkdir -v ~/.config/
 mkdir -v ~/.config/karabiner/
 ln -svf "$DOTFILES_DIR/karabiner.json" ~/.config/karabiner/
 cp -v "$DOTFILES_DIR/com.googlecode.iterm2.plist" ~
+
+git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
