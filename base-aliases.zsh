@@ -14,8 +14,6 @@ alias gals="vim $DOTFILES_DIR/git-aliases.zsh"
 
 #=== Shell ===#
 alias restart="exec zsh"
-alias :q="exit"
-alias l="ls -la"
 
 
 #=== File watching ===#
