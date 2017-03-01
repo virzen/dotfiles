@@ -9,9 +9,7 @@
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
 	<key>Coprocess MRU</key>
-	<array>
-		<string>echo vim /Users/wiktor/Workspace/***REMOVED***/app/react/containers/BankTransfers/index.jsx</string>
-	</array>
+	<array/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Earthsong</key>
@@ -436,7 +434,7 @@
 		</dict>
 	</dict>
 	<key>Default Arrangement Name</key>
-	<string>***REMOVED***</string>
+	<string>project</string>
 	<key>Default Bookmark Guid</key>
 	<string>214C788A-D732-4539-8869-A9CC0DAC5233</string>
 	<key>DimOnlyText</key>
@@ -445,6 +443,10 @@
 	<true/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideScrollbar</key>
+	<false/>
+	<key>HideTab</key>
+	<true/>
 	<key>HideTabCloseButton</key>
 	<true/>
 	<key>HideTabNumber</key>
@@ -512,6 +514,18 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>AWDS Pane Directory</key>
+			<string></string>
+			<key>AWDS Pane Option</key>
+			<string>No</string>
+			<key>AWDS Tab Directory</key>
+			<string></string>
+			<key>AWDS Tab Option</key>
+			<string>No</string>
+			<key>AWDS Window Directory</key>
+			<string></string>
+			<key>AWDS Window Option</key>
+			<string>No</string>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -763,6 +777,8 @@
 			<real>0.95267201618975905</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Text</key>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -983,7 +999,7 @@
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
-			<false/>
+			<integer>0</integer>
 			<key>Right Option Key Sends</key>
 			<integer>2</integer>
 			<key>Rows</key>
@@ -1032,10 +1048,7 @@
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
-			<array>
-				<string>mac</string>
-				<string>dark</string>
-			</array>
+			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
@@ -1167,13 +1180,21 @@
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.32216296073717954</real>
+	<key>ShowPaneTitles</key>
+	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.32604417067307701</real>
 	<key>TabStyle</key>
 	<integer>1</integer>
+	<key>TabViewType</key>
+	<integer>0</integer>
 	<key>URLHandlersByGuid</key>
 	<dict/>
+	<key>UseBorder</key>
+	<false/>
 	<key>Window Arrangements</key>
 	<dict>
-		<key>***REMOVED***</key>
+		<key>project</key>
 		<array>
 			<dict>
 				<key>Desired Columns</key>
@@ -1795,7 +1816,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/wiktor/Workspace/***REMOVED***</string>
+											<string>/Users/wiktor/Workspace/</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -1825,7 +1846,7 @@
 										<key>TTY</key>
 										<string>/dev/ttys000</string>
 										<key>Working Directory</key>
-										<string>/Users/wiktor/Workspace/***REMOVED***</string>
+										<string>/Users/wiktor/Workspace/</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -2448,7 +2469,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/wiktor/Workspace/***REMOVED***</string>
+											<string>/Users/wiktor/Workspace/</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -2478,7 +2499,7 @@
 										<key>TTY</key>
 										<string>/dev/ttys004</string>
 										<key>Working Directory</key>
-										<string>/Users/wiktor/Workspace/***REMOVED***</string>
+										<string>/Users/wiktor/Workspace/</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -3101,7 +3122,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/wiktor/Workspace/***REMOVED***</string>
+											<string>/Users/wiktor/Workspace/</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -3131,7 +3152,7 @@
 										<key>TTY</key>
 										<string>/dev/ttys002</string>
 										<key>Working Directory</key>
-										<string>/Users/wiktor/Workspace/***REMOVED***</string>
+										<string>/Users/wiktor/Workspace/</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
@@ -3731,7 +3752,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/wiktor/Workspace/***REMOVED***</string>
+											<string>/Users/wiktor/Workspace/</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -3761,7 +3782,7 @@
 										<key>TTY</key>
 										<string>/dev/ttys003</string>
 										<key>Working Directory</key>
-										<string>/Users/wiktor/Workspace/***REMOVED***</string>
+										<string>/Users/wiktor/Workspace/</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
