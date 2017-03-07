@@ -3,5 +3,3 @@
 make lint
 make lint-specs
 yarn run test
-
-exit 0
