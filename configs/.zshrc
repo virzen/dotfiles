@@ -2,7 +2,7 @@ export DOTFILES_DIR="$HOME/Workspace/dotfiles"
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/custom"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$DOTFILES_DIR/bin:$HOME/homebrew/bin:$PATH"
-
+source "$DOTFILES_DIR/variables.sh"
 
 #=== Theme ===#
 ZSH_THEME="spaceship"
@@ -35,10 +35,10 @@ export EDITOR="$VISUAL"
 
 
 #=== Aliases ===#
-source "$DOTFILES_DIR/aliases/base-aliases.sh"
-source "$DOTFILES_DIR/aliases/git-aliases.sh"
-if [[ -f "$DOTFILES_DIR/aliases/secret-aliases.sh" ]]; then
-  source "$DOTFILES_DIR/aliases/secret-aliases.sh"
+source "$ALIASES_DIR/base-aliases.sh"
+source "$ALIASES_DIR/git-aliases.sh"
+if [[ -f "$ALIASES_DIR/secret-aliases.sh" ]]; then
+  source "$ALIASES_DIR/secret-aliases.sh"
 fi
 
 
