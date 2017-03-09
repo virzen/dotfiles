@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 #=== Helpers ===#
 heading() {
@@ -28,22 +28,25 @@ fi
 # zsh -> oh my zsh
 
 heading "Symlinking configs"
-ln -svf "$DOTFILES_DIR/.zprofile"     "$HOME"
-ln -svf "$DOTFILES_DIR/.zshrc"        "$HOME"
-ln -svf "$DOTFILES_DIR/.gitconfig"    "$HOME"
-ln -svf "$DOTFILES_DIR/.vimrc"        "$HOME"
-ln -svf "$DOTFILES_DIR/.editorconfig" "$HOME"
-ln -svf "$DOTFILES_DIR/.tmux.conf"    "$HOME"
-ln -svf "$DOTFILES_DIR/.agignore"     "$HOME"
-ln -svf "$DOTFILES_DIR/.npmrc"        "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.zprofile"     "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.zshrc"        "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.gitconfig"    "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.vimrc"        "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.editorconfig" "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.tmux.conf"    "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.agignore"     "$HOME"
+ln -svf "$DOTFILES_DIR/configs/.npmrc"        "$HOME"
 
 if [[ ! -d $HOME/.config/karabiner ]]; then
   md -v "$HOME/.config/karabiner/"
 fi
-ln -svf "$DOTFILES_DIR/karabiner.json" "$HOME/.config/karabiner/"
+ln -svf "$DOTFILES_DIR/configs/karabiner.json" "$HOME/.config/karabiner/"
+
+heading "Symlinking scripts"
+ln -svf "$DOTFILES_DIR/scripts/dotfiles.sh" "$DOTFILES_DIR/bin/dotfiles"
 
 heading "Copying stuff"
-cp -v "$DOTFILES_DIR/com.googlecode.iterm2.plist" $HOME
+cp -v "$DOTFILES_DIR/configs/com.googlecode.iterm2.plist" $HOME
 
 heading "zsh-nvm"
 if [[ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm" ]]; then
