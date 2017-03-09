@@ -1,6 +1,7 @@
 #=== Configs ===#
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
+alias zd="cd $HOME/Workspace/dotfiles"
 
 
 #=== Aliases ===#
