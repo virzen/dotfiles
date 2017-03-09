@@ -2,6 +2,7 @@
 export DOTFILES_DIR="$HOME/Workspace/dotfiles"
 export ZSH_CUSTOM="$HOME/Workspace/dotfiles/custom"
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/homebrew/bin:$PATH"
 
 
 #=== Theme ===#
