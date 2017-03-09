@@ -26,7 +26,7 @@ plugins=(git brew osx git-extras history zsh-syntax-highlighting zsh-nvm z)
 
 #=== Oh My Zsh stuff ===#
 DISABLE_UPDATE_PROMPT=true
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 
 #=== Default editor ===#
@@ -35,10 +35,10 @@ export EDITOR="$VISUAL"
 
 
 #=== Aliases ===#
-source $DOTFILES_DIR/base-aliases.zsh
-source $DOTFILES_DIR/git-aliases.zsh
-if [[ -f $DOTFILES_DIR/secret-aliases.zsh ]]; then
-  source $DOTFILES_DIR/secret-aliases.zsh
+source "$DOTFILES_DIR/aliases/base-aliases.sh"
+source "$DOTFILES_DIR/aliases/git-aliases.sh"
+if [[ -f "$DOTFILES_DIR/aliases/secret-aliases.sh" ]]; then
+  source "$DOTFILES_DIR/aliases/secret-aliases.sh"
 fi
 
 
@@ -55,5 +55,5 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 
 #=== Special treatment for zsh-syntax-highlighting and zsh-nvm plugins ===#
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 #source ~/.zsh-nvm/zsh-nvm.plugin.zsh
