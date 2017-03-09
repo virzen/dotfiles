@@ -43,7 +43,7 @@ if [[ ! -d $HOME/.config/karabiner ]]; then
 fi
 ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
 
-heading "Symlinking sccripts"
+heading "Symlinking scripts"
 ln -svf "$SCRIPTS_DIR/dotfiles.sh" "$DOTFILES_DIR/bin/dotfiles"
 
 heading "zsh-nvm"
