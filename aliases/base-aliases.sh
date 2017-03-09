@@ -4,7 +4,6 @@ alias zshrc="vim ~/.zshrc"
 
 
 #=== Aliases ===#
-# FIXME
 alias bals="vim $ALIASES_DIR/base-aliases.sh"
 alias gals="vim $ALIASES_DIR/git-aliases.sh"
 
@@ -24,6 +23,10 @@ bs() {
   browser-sync start --server --files "**" --no-online --no-open $@ &
 }
 
+#=== File searching ===#
+agr() {
+  ag $@ app/react
+}
 
 #=== Network ===#
 alias testping="ping 8.8.8.8"
