@@ -30,24 +30,24 @@ fi
 # nvm -> node
 
 heading "Creating symlinks"
-ln -svf "$DOTFILES_DIR/.zprofile" ~
-ln -svf "$DOTFILES_DIR/.zshrc" ~
-ln -svf "$DOTFILES_DIR/.gitconfig" ~
-ln -svf "$DOTFILES_DIR/.vimrc" ~
-ln -svf "$DOTFILES_DIR/.editorconfig" ~
-ln -svf "$DOTFILES_DIR/.tmux.conf" ~
-ln -svf "$DOTFILES_DIR/.agignore" ~
-ln -svf "$DOTFILES_DIR/.npmrc" ~
-ln -svf "$DOTFILES_DIR/bin" ~
-mkdir -v ~/.config/
-mkdir -v ~/.config/karabiner/
-ln -svf "$DOTFILES_DIR/karabiner.json" ~/.config/karabiner/
-cp -v "$DOTFILES_DIR/com.googlecode.iterm2.plist" ~
+ln -svf "$DOTFILES_DIR/.zprofile" $HOME
+ln -svf "$DOTFILES_DIR/.zshrc" $HOME
+ln -svf "$DOTFILES_DIR/.gitconfig" $HOME
+ln -svf "$DOTFILES_DIR/.vimrc" $HOME
+ln -svf "$DOTFILES_DIR/.editorconfig" $HOME
+ln -svf "$DOTFILES_DIR/.tmux.conf" $HOME
+ln -svf "$DOTFILES_DIR/.agignore" $HOME
+ln -svf "$DOTFILES_DIR/.npmrc" $HOME
+ln -svf "$DOTFILES_DIR/bin" $HOME
+mkdir -v $HOME/.config/
+mkdir -v $HOME/.config/karabiner/
+ln -svf "$DOTFILES_DIR/karabiner.json" $HOME/.config/karabiner/
+cp -v "$DOTFILES_DIR/com.googlecode.iterm2.plist" $HOME
 
 heading "zsh-nvm"
-if [[ -d ~/.oh-my-zsh/custom/plugins/zsh-nvm ]]; then
+if [[ -d $HOME/.oh-my-zsh/custom/plugins/zsh-nvm ]]; then
   echo "Existing installation detected. Removing..."
-  rm -rf ~/.oh-my-zsh/custom/plugins/zsh-nvm
+  rm -rf $HOME/.oh-my-zsh/custom/plugins/zsh-nvm
 fi
 echo "Installing fresh one..."
-git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+git clone https://github.com/lukechilds/zsh-nvm $HOME/.oh-my-zsh/custom/plugins/zsh-nvm
