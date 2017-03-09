@@ -1,2 +1,3 @@
 *.swp
 **/secret-aliases.zsh
+bin/*
