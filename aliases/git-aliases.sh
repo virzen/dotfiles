@@ -55,6 +55,7 @@ alias gmfm='git checkout master && git pull && git checkout - && git merge maste
 
 alias gcl='git clone'
 
+# Push current branch to origin with tracking
 gpsuc() {
   if CURRENT_BRANCH_NAME=$(git symbolic-ref --short -q HEAD) then
     git push -u origin $CURRENT_BRANCH_NAME
