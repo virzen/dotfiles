@@ -34,4 +34,10 @@ mkdir -v ~/.config/karabiner/
 ln -svf "$DOTFILES_DIR/karabiner.json" ~/.config/karabiner/
 cp -v "$DOTFILES_DIR/com.googlecode.iterm2.plist" ~
 
+heading "zsh-nvm"
+if [[ -d ~/.oh-my-zsh/custom/plugins/zsh-nvm ]]; then
+  echo "Existing installation detected. Removing..."
+  rm -rf ~/.oh-my-zsh/custom/plugins/zsh-nvm
+fi
+echo "Installing fresh one..."
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
