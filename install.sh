@@ -13,21 +13,19 @@ if [[ $? -gt 0 ]] && [[ $ENV != "test" ]]; then
   exit 1
 fi
 
-heading "Homebrew"
 if [[ -d "$HOME/homebrew/.git" ]]; then
+  heading "Updating homebrew"
   echo "Local homebrew installation detected. Updating..."
-  PATH="$HOME/homebrew/bin:$PATH" brew update
+  brew update
 else
+  heading "Installing homebrew"
   echo "Cloning homebrew to $HOME/hombrew..."
   git clone git@github.com:Homebrew/brew.git $HOME/homebrew
   if [[ $? -eq 0 ]]; then
     echo "Brew installation successful. Make sure you have \$HOME/homebrew/bin in your PATH."
   fi
 fi
-
-# brew
 # zsh -> oh my zsh
-# nvm -> node
 
 heading "Creating symlinks"
 ln -svf "$DOTFILES_DIR/.zprofile" $HOME
