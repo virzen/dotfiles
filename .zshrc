@@ -1,7 +1,7 @@
 # FIXME: use relative path instead of hardcoding it
-export DOTFILES_DIR=$HOME/Workspace/dotfiles
-export ZSH_CUSTOM=$HOME/Workspace/dotfiles/custom
-export ZSH=$HOME/.oh-my-zsh
+export DOTFILES_DIR="$HOME/Workspace/dotfiles"
+export ZSH_CUSTOM="$HOME/Workspace/dotfiles/custom"
+export ZSH="$HOME/.oh-my-zsh"
 
 
 #=== Theme ===#

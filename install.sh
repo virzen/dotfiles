@@ -13,8 +13,18 @@ if [[ $? -gt 0 ]] && [[ $ENV != "test" ]]; then
   exit 1
 fi
 
-heading "Installing missing utilities."
-# TODO: Install often used programs
+heading "Homebrew"
+if [[ -d "$HOME/homebrew/.git" ]]; then
+  echo "Local homebrew installation detected. Updating..."
+  PATH="$HOME/homebrew/bin:$PATH" brew update
+else
+  echo "Cloning homebrew to $HOME/hombrew..."
+  git clone git@github.com:Homebrew/brew.git $HOME/homebrew
+  if [[ $? -eq 0 ]]; then
+    echo "Brew installation successful. Make sure you have \$HOME/homebrew/bin in your PATH."
+  fi
+fi
+
 # brew
 # zsh -> oh my zsh
 # nvm -> node
