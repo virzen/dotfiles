@@ -14,6 +14,7 @@ if [[ $? -gt 0 ]] && [[ $ENV != "test" ]]; then
   exit 1
 fi
 
+
 if [[ -d "$HOME/homebrew/.git" ]]; then
   heading "Updating homebrew"
   echo "Local homebrew installation detected. Updating..."
