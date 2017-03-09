@@ -22,7 +22,7 @@ HIST_STAMPS="dd.mm.yyyy"
 
 #=== Plugins ===#
 export NVM_LAZY_LOAD=true
-plugins=(git brew osx git-extras history zsh-syntax-highlighting z)
+plugins=(git brew osx git-extras history zsh-syntax-highlighting zsh-nvm z)
 
 
 #=== Oh My Zsh stuff ===#
@@ -55,8 +55,6 @@ export FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 
-#=== Special treatment for zsh-syntax-highlighting plugin ===#
+#=== Special treatment for zsh-syntax-highlighting and zsh-nvm plugins ===#
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+#source ~/.zsh-nvm/zsh-nvm.plugin.zsh
