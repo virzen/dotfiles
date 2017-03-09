@@ -3,7 +3,7 @@ export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 #=== Helpers ===#
 heading() {
-  echo -e '\n#=== '$1'===#'
+  echo -e '\n#=== '$1' ===#'
 }
 
 #=== Actual installation ===#
