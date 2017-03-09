@@ -24,10 +24,12 @@ bs() {
   browser-sync start --server --files "**" --no-online --no-open $@ &
 }
 
+
 #=== File searching ===#
 agr() {
   ag $@ app/react
 }
+
 
 #=== Network ===#
 alias testping="ping 8.8.8.8"
@@ -47,9 +49,3 @@ ssh-generate() {
   ssh-add ~/.ssh/id_rsa
   pubkey
 }
-
-
-#=== Rails ===#
-alias rserv="bundle exec rails server"
-alias rmg="rails db:migrate RAILS_ENV=development"
-alias rmgt="rails db:migrate RAILS_ENV=test"
