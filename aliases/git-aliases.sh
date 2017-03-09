@@ -63,3 +63,11 @@ gpsuc() {
     echo "Cannot detect current branch."
   fi
 }
+
+# Fuzzy searching git branches
+gcof() {
+  local branches branch
+  branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}

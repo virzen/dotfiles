@@ -1,6 +1,3 @@
-export DOTFILES_DIR="$HOME/Workspace/dotfiles"
-
-
 #=== Configs ===#
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
@@ -8,8 +5,8 @@ alias zshrc="vim ~/.zshrc"
 
 #=== Aliases ===#
 # FIXME
-alias bals="vim $DOTFILES_DIR/base-aliases.zsh"
-alias gals="vim $DOTFILES_DIR/git-aliases.zsh"
+alias bals="vim $ALIASES_DIR/base-aliases.zsh"
+alias gals="vim $ALIASES_DIR/git-aliases.zsh"
 
 
 #=== Shell ===#
