@@ -3,7 +3,6 @@
 source "$DOTFILES_DIR/variables.sh"
 
 
-#=== Helpers ===#
 heading() {
   echo -e '\n#=== '$1' ===#'
 }
