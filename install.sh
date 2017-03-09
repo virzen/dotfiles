@@ -36,7 +36,6 @@ ln -svf "$DOTFILES_DIR/.editorconfig" $HOME
 ln -svf "$DOTFILES_DIR/.tmux.conf" $HOME
 ln -svf "$DOTFILES_DIR/.agignore" $HOME
 ln -svf "$DOTFILES_DIR/.npmrc" $HOME
-ln -svf "$DOTFILES_DIR/bin" $HOME
 mkdir -v $HOME/.config/
 mkdir -v $HOME/.config/karabiner/
 ln -svf "$DOTFILES_DIR/karabiner.json" $HOME/.config/karabiner/
