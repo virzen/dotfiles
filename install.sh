@@ -27,7 +27,7 @@ else
 fi
 # zsh -> oh my zsh
 
-heading "Creating symlinks"
+heading "Symlinking configs"
 ln -svf "$DOTFILES_DIR/.zprofile"     "$HOME"
 ln -svf "$DOTFILES_DIR/.zshrc"        "$HOME"
 ln -svf "$DOTFILES_DIR/.gitconfig"    "$HOME"
