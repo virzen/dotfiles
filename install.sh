@@ -9,7 +9,7 @@ heading() {
 #=== Actual installation ===#
 heading "Pulling the newest version of dotfiles"
 [ -d "$DOTFILES_DIR"/.git ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
-if [[ $? -gt 0 ]]; then
+if [[ $? -gt 0 ]] && [[ $ENV != "test" ]]; then
   exit 1
 fi
 
