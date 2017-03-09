@@ -2,12 +2,13 @@
 #export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$DOTFILES_DIR/variables.sh"
 
+
 #=== Helpers ===#
 heading() {
   echo -e '\n#=== '$1' ===#'
 }
 
-#=== Actual installation ===#
+
 heading "Pulling the newest version of dotfiles"
 [ -d "$DOTFILES_DIR"/.git ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 if [[ $? -gt 0 ]] && [[ $ENV != "test" ]]; then
@@ -28,6 +29,7 @@ else
 fi
 # zsh -> oh my zsh
 
+
 heading "Symlinking configs"
 ln -svf "$CONFIGS_DIR/.zprofile"     "$HOME"
 ln -svf "$CONFIGS_DIR/.zshrc"        "$HOME"
@@ -43,8 +45,10 @@ if [[ ! -d $HOME/.config/karabiner ]]; then
 fi
 ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
 
+
 heading "Symlinking scripts"
 ln -svf "$SCRIPTS_DIR/dotfiles.sh" "$DOTFILES_DIR/bin/dotfiles"
+
 
 heading "zsh-nvm"
 if [[ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm" ]]; then
