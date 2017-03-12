@@ -17,8 +17,8 @@ alias restart="exec zsh"
 fsw() {
   fswatch $2 | xargs -n 1 $1
 }
-alias fswpy="fsw python"
-alias fswpy3="fsw python3"
+alias fswpy="fsw python3"
+alias fswpy2="fsw python"
 
 bs() {
   browser-sync start --server --files "**" --no-online --no-open $@ &
