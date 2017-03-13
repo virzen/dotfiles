@@ -8,3 +8,4 @@
   default = simple
 [core]
 	pager = less -+F
+	excludesfile = /Users/wiktor/.gitignore
