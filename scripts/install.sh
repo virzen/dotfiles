@@ -15,18 +15,18 @@ if [[ $? -gt 0 ]] && [[ $ENV != "test" ]]; then
 fi
 
 
-if [[ -d "$HOME/homebrew/.git" ]]; then
-  heading "Updating homebrew"
-  echo "Local homebrew installation detected. Updating..."
-  brew update
-else
-  heading "Installing homebrew"
-  echo "Cloning homebrew to $HOME/hombrew..."
-  git clone git@github.com:Homebrew/brew.git "$HOME/homebrew"
-  if [[ $? -eq 0 ]]; then
-    echo "Brew installation successful. Make sure you have \$HOME/homebrew/bin in your PATH."
-  fi
-fi
+#if [[ -d "$HOME/homebrew/.git" ]]; then
+#  heading "Updating homebrew"
+#  echo "Local homebrew installation detected. Updating..."
+#  brew update
+#else
+#  heading "Installing homebrew"
+#  echo "Cloning homebrew to $HOME/hombrew..."
+#  git clone git@github.com:Homebrew/brew.git "$HOME/homebrew"
+#  if [[ $? -eq 0 ]]; then
+#    echo "Brew installation successful. Make sure you have \$HOME/homebrew/bin in your PATH."
+#  fi
+#fi
 # zsh -> oh my zsh
 
 
@@ -51,10 +51,10 @@ heading "Symlinking scripts"
 ln -svf "$SCRIPTS_DIR/dotfiles.sh" "$DOTFILES_DIR/bin/dotfiles"
 
 
-heading "zsh-nvm"
-if [[ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm" ]]; then
-  echo "Existing installation detected. Removing..."
-  rm -rf "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm"
-fi
-echo "Installing fresh one..."
-git clone https://github.com/lukechilds/zsh-nvm "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm"
+#heading "zsh-nvm"
+#if [[ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm" ]]; then
+#  echo "Existing installation detected. Removing..."
+#  rm -rf "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm"
+#fi
+#echo "Installing fresh one..."
+#git clone https://github.com/lukechilds/zsh-nvm "$HOME/.oh-my-zsh/custom/plugins/zsh-nvm"
