@@ -97,6 +97,10 @@ set nobackup
 set nowb
 set noswapfile
 
+set textwidth=80
+autocmd FileType gitcommit set textwidth=72
+set colorcolumn=+1
+
 " Enable rich color palette
 if (has("termguicolors"))
   set termguicolors
