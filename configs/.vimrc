@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
@@ -15,6 +16,8 @@ call plug#end()
 "=== Keybindings ==="
 let mapleader = ' '
 map <leader>t :FZF<cr>
+map <leader>g :GFiles?<cr>
+map <leader>b :Buffers<cr>
 map <leader>o :NERDTreeToggle<cr>
 map <leader>\ :NERDTreeFind<cr>
 
