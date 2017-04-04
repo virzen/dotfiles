@@ -20,6 +20,9 @@ map <leader>g :GFiles?<cr>
 map <leader>b :Buffers<cr>
 map <leader>o :NERDTreeToggle<cr>
 map <leader>\ :NERDTreeFind<cr>
+map <leader>p "0p
+map <leader>P "0P
+
 
 " Split pane navigation
 nnoremap <c-j> <c-w><c-j>
@@ -31,6 +34,7 @@ nnoremap U :echo "<<===== CHECK CAPS LOCK =====>>"<CR>
 
 " Custom commands
 command Bda bufdo bd
+command BDA bufdo bd!
 command Src source %
 
 
