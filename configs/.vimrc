@@ -87,6 +87,9 @@ command PC PlugClean
 "=== Vim-specific ==="
 set nocompatible
 
+" Enable scrolling with mouse
+set mouse=a
+
 " Line numbering
 set relativenumber
 set number
