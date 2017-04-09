@@ -5,12 +5,14 @@ alias gsl='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gap='git add --patch'
+alias gaN='git add -N'
 
 alias gc='git commit --verbose'
 alias gcm='git commit --verbose -m'
 alias gc!='git commit --verbose --amend'
 
 alias gr='git reset'
+alias grp='git reset --patch'
 alias grs='git reset --soft'
 alias grh='git reset --hard'
 
