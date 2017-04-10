@@ -1,2 +1,2 @@
 #!/bin/sh
-make lint && make lint-specs && yarn run test
+make lint && make lint-specs && yarn test
