@@ -42,10 +42,6 @@ if [[ -f "$ALIASES_DIR/secret-aliases.sh" ]]; then
 fi
 
 
-#=== rvm ===#
-export PATH="$PATH:$HOME/.rvm/bin"
-
-
 #=== fzf ===#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -60,3 +56,7 @@ source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 #=== nvm ===#
 export NVM_DIR="$HOME/.nvm"
   . "/Users/virzen/homebrew/opt/nvm/nvm.sh"
+
+
+#=== rvm ===#
+export PATH="$PATH:$HOME/.rvm/bin"
