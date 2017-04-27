@@ -41,6 +41,8 @@ nnoremap U :echo "<<===== CHECK CAPS LOCK =====>>"<CR>
 command Bda bufdo bd
 command BDA bufdo bd!
 command Src source %
+command PI PlugInstall
+command PU PlugUpdate
 
 
 "=== Plugins' settings ==="
