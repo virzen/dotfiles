@@ -7,6 +7,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'tpope/vim-surround'
+Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'mxw/vim-jsx'
 
 Plug 'w0ng/vim-hybrid' " theme
 
