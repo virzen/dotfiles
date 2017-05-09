@@ -111,6 +111,8 @@ set nobackup
 set nowb
 set noswapfile
 
+set mouse=a
+
 set textwidth=80
 autocmd FileType gitcommit set textwidth=72
 set colorcolumn=+1
