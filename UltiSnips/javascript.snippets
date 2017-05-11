@@ -1,3 +1,66 @@
-snippet log
+snippet log "console.log"
 console.log(${1:'test'});$0
 endsnippet
+
+snippet im "import"
+import $1 from '$2';$0
+endsnippet
+
+snippet imr "import React"
+import React from 'react';
+endsnippet
+
+snippet imrc "import React"
+import React, { Component } from 'react';
+endsnippet
+
+snippet imrcp "import React"
+import React, { Component, PropTypes } from 'react';
+endsnippet
+
+snippet imrp "import React"
+import React, { PropTypes } from 'react';
+endsnippet
+
+snippet ims "import styles"
+import styles from '${1:./style.css}';$0
+endsnippet
+
+snippet imcx "import classnames"
+import cx from 'classnames';
+endsnippet
+
+snippet imif "import If"
+import { If } from 'components/Conditions';
+endsnippet
+
+snippet If "If component"
+<If ok={$1}>
+  $2
+</If>$0
+endsnippet
+
+snippet class
+class $1 extends Component {
+  render() {
+    return (
+      $2
+    )
+  }
+}
+endsnippet
+
+snippet pts
+$1.propTypes = {
+  $2
+};
+endsnippet
+
+snippet pt
+$1: PropTypes.$2${3:.isRequired},
+endsnippet
+
+snippet ed
+export default $1;$0
+endsnippet
+
