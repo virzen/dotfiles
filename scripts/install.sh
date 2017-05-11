@@ -15,12 +15,20 @@ if [[ $? -gt 0 ]] && [[ $ENV != "test" ]]; then
 fi
 
 
+if [[ ! -d $HOME/.config/karabiner ]]; then
+  md -v "$HOME/.config/karabiner"
+fi
+if [[ ! -d $HOME/.config/nvim ]]; then
+  md -v "$HOME/.config/nvim"
+fi
+
 heading "Symlinking configs"
 ln -svf "$CONFIGS_DIR/.zprofile"     "$HOME"
 ln -svf "$CONFIGS_DIR/.zshrc"        "$HOME"
 ln -svf "$CONFIGS_DIR/.gitconfig"    "$HOME"
 ln -svf "$CONFIGS_DIR/.gitignore"    "$HOME"
 ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME"
+ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME/.config/nvim/init.vim"
 ln -svf "$CONFIGS_DIR/.editorconfig" "$HOME"
 ln -svf "$CONFIGS_DIR/.tmux.conf"    "$HOME"
 ln -svf "$CONFIGS_DIR/.agignore"     "$HOME"
