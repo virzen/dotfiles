@@ -12,6 +12,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'mxw/vim-jsx'
+Plug 'SirVer/ultisnips'
+Plug 'wesQ3/vim-windowswap'
 
 Plug 'w0ng/vim-hybrid' " theme
 
@@ -57,6 +59,11 @@ set updatetime=250
 
 " UltiSnips
 let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:UltiSnipsEditSplit="vertical"
 
 " hybrid theme
 syntax on
@@ -116,6 +123,8 @@ set mouse=a
 set textwidth=80
 autocmd FileType gitcommit set textwidth=72
 set colorcolumn=+1
+
+filetype plugin indent on
 
 " Enable rich color palette
 if (has("termguicolors"))
