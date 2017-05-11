@@ -25,6 +25,7 @@ let mapleader = ' '
 map <leader>t :FZF<cr>
 map <leader>g :GFiles?<cr>
 map <leader>b :Buffers<cr>
+map <leader>s :Snippets<cr>
 map <leader>o :NERDTreeToggle<cr>
 map <leader>\ :NERDTreeFind<cr>
 map <leader>p "0p
@@ -58,7 +59,12 @@ let g:gitgutter_realtime = 1
 set updatetime=250
 
 " UltiSnips
+ let g:UltiSnipsExpandTrigger="<tab>"
+ let g:UltiSnipsJumpForwardTrigger="<tab>"
+ "let g:UltiSnipsJumpBackwardTrigger         <c-k>
+
 let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 
 " hybrid theme
 syntax on
@@ -118,8 +124,6 @@ set mouse=a
 set textwidth=80
 autocmd FileType gitcommit set textwidth=72
 set colorcolumn=+1
-
-filetype plugin indent on
 
 " Enable rich color palette
 if (has("termguicolors"))

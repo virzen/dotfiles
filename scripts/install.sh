@@ -30,9 +30,11 @@ ln -svf "$CONFIGS_DIR/.gitignore"    "$HOME"
 ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME"
 ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME/.config/nvim/init.vim"
 ln -svf "$CONFIGS_DIR/.editorconfig" "$HOME"
-ln -svf "$CONFIGS_DIR/.tmux.conf"    "$HOME"
 ln -svf "$CONFIGS_DIR/.agignore"     "$HOME"
 ln -svf "$CONFIGS_DIR/.npmrc"        "$HOME"
+
+heading "Symlinking snippets"
+ln -svf "$DOTFILES_DIR/UltiSnips/"    "$HOME/.config/nvim"
 
 if [[ ! -d $HOME/.config/karabiner ]]; then
   md -v "$HOME/.config/karabiner"
