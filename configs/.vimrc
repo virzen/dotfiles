@@ -2,22 +2,42 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
+  let NERDTreeQuitOnOpen=1
+  let NERDTreeShowHidden=1
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'tpope/vim-surround'
-Plug 'Raimondi/delimitMate'
+
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
+Plug 'airblade/vim-gitgutter'
+  let g:gitgutter_sign_column_always = 1
+  let g:gitgutter_realtime = 1
+  set updatetime=250
+
+Plug 'editorconfig/editorconfig-vim'
+
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx'
+
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-rhubarb'
+Plug 'Raimondi/delimitMate'
+
 Plug 'SirVer/ultisnips'
+  let g:UltiSnipsExpandTrigger="<tab>"
+  let g:UltiSnipsJumpForwardTrigger="<tab>"
+  let g:UltiSnipsEditSplit="vertical"
+  let g:UltiSnipsSnippetDir="$HOME/.config/nvim/UltiSnips"
+
 Plug 'wesQ3/vim-windowswap'
 
 Plug 'w0ng/vim-hybrid' " theme
 
 call plug#end()
+
+syntax on
+set background=dark
+colorscheme hybrid
 
 
 "=== Keybindings ==="
@@ -46,30 +66,6 @@ command BDA bufdo bd!
 command Src source %
 command PI PlugInstall
 command PU PlugUpdate
-
-
-"=== Plugins' settings ==="
-" NERDTree
-let NERDTreeQuitOnOpen=1
-let NERDTreeShowHidden=1
-
-" gitgutter
-let g:gitgutter_sign_column_always = 1
-let g:gitgutter_realtime = 1
-set updatetime=250
-
-" UltiSnips
- let g:UltiSnipsExpandTrigger="<tab>"
- let g:UltiSnipsJumpForwardTrigger="<tab>"
- "let g:UltiSnipsJumpBackwardTrigger         <c-k>
-
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
-
-" hybrid theme
-syntax on
-set background=dark
-colorscheme hybrid
 
 
 "=== Vim-specific ==="
