@@ -60,6 +60,20 @@ nnoremap <c-h> <c-w><c-h>
 
 nnoremap U :echo "<<===== CHECK CAPS LOCK =====>>"<CR>
 
+" wrapped lines sanity
+nnoremap <silent> j gj
+nnoremap <silent> k gk
+
+" auto center search
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+
+" reselect visual block after indent
+vnoremap < <gv
+vnoremap > >gv
+
 " Custom commands
 command Bda bufdo bd
 command BDA bufdo bd!
