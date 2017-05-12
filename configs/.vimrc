@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
   let NERDTreeQuitOnOpen=1
   let NERDTreeShowHidden=1
+Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -50,7 +51,6 @@ map <leader>o :NERDTreeToggle<cr>
 map <leader>\ :NERDTreeFind<cr>
 map <leader>p "0p
 map <leader>P "0P
-
 
 " Split pane navigation
 nnoremap <c-j> <c-w><c-j>
