@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
   let NERDTreeQuitOnOpen=1
   let NERDTreeShowHidden=1
-Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -29,6 +28,8 @@ Plug 'SirVer/ultisnips'
   let g:UltiSnipsJumpForwardTrigger="<tab>"
   let g:UltiSnipsEditSplit="vertical"
   let g:UltiSnipsSnippetDir="$HOME/.config/nvim/UltiSnips"
+
+Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
 
 Plug 'wesQ3/vim-windowswap'
 
