@@ -80,6 +80,7 @@ command BDA bufdo bd!
 command Src source %
 command PI PlugInstall
 command PU PlugUpdate
+command PC PlugClean
 
 
 "=== Vim-specific ==="
