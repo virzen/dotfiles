@@ -1,3 +1,4 @@
 *.swp
 **/*secret*
 bin/*
+.DS_Store
