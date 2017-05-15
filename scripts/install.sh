@@ -8,12 +8,14 @@ heading() {
 }
 
 
+heading "Creating directories"
 if [[ ! -d $HOME/.config/karabiner ]]; then
   md -v "$HOME/.config/karabiner"
 fi
 if [[ ! -d $HOME/.config/nvim ]]; then
   md -v "$HOME/.config/nvim"
 fi
+
 
 heading "Symlinking configs"
 ln -svf "$CONFIGS_DIR/.zprofile"     "$HOME"
@@ -26,6 +28,7 @@ ln -svf "$CONFIGS_DIR/.editorconfig" "$HOME"
 ln -svf "$CONFIGS_DIR/.agignore"     "$HOME"
 ln -svf "$CONFIGS_DIR/.npmrc"        "$HOME"
 
+
 heading "Symlinking snippets"
 ln -svf "$DOTFILES_DIR/UltiSnips/"    "$HOME/.config/nvim"
 
@@ -33,6 +36,11 @@ if [[ ! -d $HOME/.config/karabiner ]]; then
   md -v "$HOME/.config/karabiner"
 fi
 ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
+
+
+heading "Installing vim-plug"
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 heading "Symlinking scripts"
