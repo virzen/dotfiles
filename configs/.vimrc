@@ -60,6 +60,9 @@ nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
 
+" Exit insert mode in terminal with escape
+":tnoremap <Esc> <C-\><C-n>
+
 nnoremap U :echo "<<===== CHECK CAPS LOCK =====>>"<CR>
 
 " wrapped lines sanity
