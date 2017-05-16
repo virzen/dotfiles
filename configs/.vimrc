@@ -48,6 +48,7 @@ map <leader>t :FZF<cr>
 map <leader>g :GFiles?<cr>
 map <leader>b :Buffers<cr>
 map <leader>s :Snippets<cr>
+map <leader>h :History<cr>
 map <leader>o :NERDTreeToggle<cr>
 map <leader>\ :NERDTreeFind<cr>
 map <leader>p "0p
