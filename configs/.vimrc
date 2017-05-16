@@ -80,12 +80,12 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Custom commands
-command Bda bufdo bd
-command BDA bufdo bd!
-command Src source %
-command PI PlugInstall
-command PU PlugUpdate
-command PC PlugClean
+command! Bda bufdo bd
+command! BDA bufdo bd!
+command! Src source ~/Workspace/dotfiles/configs/.vimrc
+command! PI PlugInstall
+command! PU PlugUpdate
+command! PC PlugClean
 
 
 "=== Vim-specific ==="
