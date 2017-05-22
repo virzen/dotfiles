@@ -21,6 +21,7 @@ fsw() {
 }
 alias fswpy="fsw python3"
 alias fswpy2="fsw python"
+alias fswn="fsw node"
 
 bs() {
   browser-sync start --server --files "**" --no-online --no-open $@ &
