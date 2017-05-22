@@ -15,6 +15,7 @@ Plug 'airblade/vim-gitgutter'
   set updatetime=250
 
 Plug 'editorconfig/editorconfig-vim'
+  let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx'
