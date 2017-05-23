@@ -32,6 +32,7 @@ bs() {
 agr() {
   ag $@ app/react
 }
+alias ag='ag --pager="less -XFR"'
 
 
 #=== Network ===#
