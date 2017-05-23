@@ -1,0 +1,312 @@
+{
+  "Ansi 5 Color" : {
+    "Green Component" : 0.3203870058059692,
+    "Blue Component" : 0.4875075817108154,
+    "Red Component" : 0.4438624978065491
+  },
+  "Tags" : [
+
+  ],
+  "Ansi 12 Color" : {
+    "Green Component" : 0.5659047365188599,
+    "Blue Component" : 0.691042959690094,
+    "Red Component" : 0.4342023730278015
+  },
+  "Ansi 3 Color" : {
+    "Green Component" : 0.5018076300621033,
+    "Blue Component" : 0.3018063902854919,
+    "Red Component" : 0.8330613970756531
+  },
+  "Ansi 7 Color" : {
+    "Green Component" : 0.3944053053855896,
+    "Blue Component" : 0.4265227913856506,
+    "Red Component" : 0.3645541667938232
+  },
+  "Bold Color" : {
+    "Green Component" : 0.7372549019607844,
+    "Blue Component" : 0.7294117647058823,
+    "Red Component" : 0.7215686274509804
+  },
+  "AWDS Tab Directory" : "",
+  "Ansi 9 Color" : {
+    "Green Component" : 0.3127848505973816,
+    "Blue Component" : 0.3269221782684326,
+    "Red Component" : 0.7473177313804626
+  },
+  "Ansi 8 Color" : {
+    "Green Component" : 0.175298884510994,
+    "Blue Component" : 0.1951855719089508,
+    "Red Component" : 0.1633204221725464
+  },
+  "Rows" : 25,
+  "Default Bookmark" : "No",
+  "Ansi 4 Color" : {
+    "Green Component" : 0.4285736382007599,
+    "Blue Component" : 0.5461168885231018,
+    "Red Component" : 0.3033672571182251
+  },
+  "AWDS Tab Option" : "No",
+  "Cursor Guide Color" : {
+    "Red Component" : 0.65,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 1,
+    "Alpha Component" : 0.25,
+    "Green Component" : 0.91
+  },
+  "Non-ASCII Anti Aliased" : true,
+  "Use Bright Bold" : true,
+  "Show Mark Indicators" : false,
+  "Ansi 10 Color" : {
+    "Green Component" : 0.697218120098114,
+    "Blue Component" : 0.3348517417907715,
+    "Red Component" : 0.6527709364891052
+  },
+  "Ambiguous Double Width" : false,
+  "AWDS Pane Option" : "No",
+  "Jobs to Ignore" : [
+    "rlogin",
+    "ssh",
+    "slogin",
+    "telnet"
+  ],
+  "Ansi 15 Color" : {
+    "Green Component" : 0.7377275228500366,
+    "Blue Component" : 0.7279912233352661,
+    "Red Component" : 0.7237878441810608
+  },
+  "Foreground Color" : {
+    "Green Component" : 0.7372549019607844,
+    "Blue Component" : 0.7294117647058823,
+    "Red Component" : 0.7215686274509804
+  },
+  "Working Directory" : "\/Users\/wiktor",
+  "Blinking Cursor" : false,
+  "AWDS Window Option" : "No",
+  "Sync Title" : false,
+  "Prompt Before Closing 2" : 0,
+  "BM Growl" : true,
+  "Command" : "\/bin\/zsh",
+  "Description" : "Default",
+  "AWDS Pane Directory" : "",
+  "Disable Window Resizing" : true,
+  "Screen" : -2,
+  "Selection Color" : {
+    "Green Component" : 0.7372549019607844,
+    "Blue Component" : 0.7294117647058823,
+    "Red Component" : 0.7215686274509804
+  },
+  "Mouse Reporting" : true,
+  "AWDS Window Directory" : "",
+  "Columns" : 80,
+  "Idle Code" : 0,
+  "Space" : 0,
+  "Ansi 13 Color" : {
+    "Green Component" : 0.4991237223148346,
+    "Blue Component" : 0.6777641177177429,
+    "Red Component" : 0.6345680952072144
+  },
+  "Custom Command" : "No",
+  "ASCII Anti Aliased" : true,
+  "Non Ascii Font" : "Monaco 12",
+  "Vertical Spacing" : 1.37213031814759,
+  "Use Bold Font" : true,
+  "Option Key Sends" : 2,
+  "Selected Text Color" : {
+    "Green Component" : 0.09214270114898682,
+    "Blue Component" : 0.09770775586366653,
+    "Red Component" : 0.08693759888410568
+  },
+  "Background Color" : {
+    "Green Component" : 0.09214270114898682,
+    "Blue Component" : 0.09770775586366653,
+    "Red Component" : 0.08693759888410568
+  },
+  "Character Encoding" : 4,
+  "Ansi 11 Color" : {
+    "Green Component" : 0.7331227660179138,
+    "Blue Component" : 0.381437361240387,
+    "Red Component" : 0.922292947769165
+  },
+  "Use Italic Font" : true,
+  "Unlimited Scrollback" : false,
+  "Keyboard Map" : {
+    "0xf706-0x20000" : {
+      "Action" : 10,
+      "Text" : "[1;2R"
+    },
+    "0xf702-0x280000" : {
+      "Action" : 10,
+      "Text" : "b"
+    },
+    "0xf707-0x20000" : {
+      "Action" : 10,
+      "Text" : "[1;2S"
+    },
+    "0xf70d-0x20000" : {
+      "Action" : 10,
+      "Text" : "[21;2~"
+    },
+    "0xf703-0x280000" : {
+      "Action" : 10,
+      "Text" : "f"
+    },
+    "0xf70e-0x20000" : {
+      "Action" : 10,
+      "Text" : "[23;2~"
+    },
+    "0xf70a-0x20000" : {
+      "Action" : 10,
+      "Text" : "[18;2~"
+    },
+    "0xf70f-0x20000" : {
+      "Action" : 10,
+      "Text" : "[24;2~"
+    },
+    "0x4c-0x120000" : {
+      "Action" : 52,
+      "Text" : ""
+    },
+    "0x4b-0x120000" : {
+      "Action" : 50,
+      "Text" : ""
+    },
+    "0xf72b-0x20000" : {
+      "Action" : 10,
+      "Text" : "[1;2F"
+    },
+    "0x48-0x120000" : {
+      "Action" : 51,
+      "Text" : ""
+    },
+    "0xf72b-0x40000" : {
+      "Action" : 10,
+      "Text" : "[1;5F"
+    },
+    "0x4a-0x120000" : {
+      "Action" : 49,
+      "Text" : ""
+    },
+    "0xf708-0x20000" : {
+      "Action" : 10,
+      "Text" : "[15;2~"
+    },
+    "0x72-0x100000" : {
+      "Action" : 13,
+      "Text" : ""
+    },
+    "0xf709-0x20000" : {
+      "Action" : 10,
+      "Text" : "[17;2~"
+    },
+    "0xf704-0x20000" : {
+      "Action" : 10,
+      "Text" : "[1;2P"
+    },
+    "0xf705-0x20000" : {
+      "Action" : 10,
+      "Text" : "[1;2Q"
+    },
+    "0xf70c-0x20000" : {
+      "Action" : 10,
+      "Text" : "[20;2~"
+    },
+    "0x6c-0x100000" : {
+      "Action" : 30,
+      "Text" : ""
+    },
+    "0xf70b-0x20000" : {
+      "Action" : 10,
+      "Text" : "[19;2~"
+    },
+    "0xf729-0x20000" : {
+      "Action" : 10,
+      "Text" : "[1;2H"
+    },
+    "0xf729-0x40000" : {
+      "Action" : 10,
+      "Text" : "[1;5H"
+    },
+    "0x6b-0x100000" : {
+      "Action" : 13,
+      "Text" : ""
+    },
+    "0x68-0x100000" : {
+      "Action" : 31,
+      "Text" : ""
+    }
+  },
+  "Semantic History" : {
+    "editor" : "com.sublimetext.3",
+    "text" : "echo vim \\1",
+    "action" : "coprocess"
+  },
+  "Window Type" : 1,
+  "Initial Text" : "",
+  "Background Image Location" : "",
+  "Blur" : false,
+  "Badge Color" : {
+    "Red Component" : 1,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0,
+    "Alpha Component" : 0.5,
+    "Green Component" : 0
+  },
+  "Scrollback Lines" : 1000,
+  "Send Code When Idle" : false,
+  "Close Sessions On End" : true,
+  "Terminal Type" : "xterm-256color",
+  "Visual Bell" : true,
+  "Flashing Bell" : false,
+  "Silence Bell" : true,
+  "Ansi 14 Color" : {
+    "Green Component" : 0.6965185403823853,
+    "Blue Component" : 0.6599013209342957,
+    "Red Component" : 0.4739469289779663
+  },
+  "Cursor Text Color" : {
+    "Green Component" : 0.1231276914477348,
+    "Blue Component" : 0.1352801471948624,
+    "Red Component" : 0.1177214533090591
+  },
+  "Name" : "Virzen",
+  "Minimum Contrast" : 0.2874060522151899,
+  "Shortcut" : "",
+  "Cursor Color" : {
+    "Green Component" : 0.7372549019607844,
+    "Blue Component" : 0.7294117647058823,
+    "Red Component" : 0.7215686274509804
+  },
+  "Ansi 0 Color" : {
+    "Green Component" : 0.123237319290638,
+    "Blue Component" : 0.1322914958000183,
+    "Red Component" : 0.1177285984158516
+  },
+  "Guid" : "214C788A-D732-4539-8869-A9CC0DAC5233",
+  "Horizontal Spacing" : 0.9526720161897591,
+  "Ansi 2 Color" : {
+    "Green Component" : 0.5171836018562317,
+    "Blue Component" : 0.1935056000947952,
+    "Red Component" : 0.4767956137657166
+  },
+  "Ansi 1 Color" : {
+    "Green Component" : 0.1851587742567062,
+    "Blue Component" : 0.1996620148420334,
+    "Red Component" : 0.5740046501159668
+  },
+  "Right Option Key Sends" : 2,
+  "Use Non-ASCII Font" : false,
+  "Ansi 6 Color" : {
+    "Green Component" : 0.4834163784980774,
+    "Blue Component" : 0.4547473192214966,
+    "Red Component" : 0.3019841313362122
+  },
+  "Normal Font" : "FiraCode-Regular 12",
+  "Transparency" : 0,
+  "Link Color" : {
+    "Red Component" : 0.023,
+    "Color Space" : "Calibrated",
+    "Blue Component" : 0.678,
+    "Alpha Component" : 1,
+    "Green Component" : 0.27
+  },
+  "Custom Directory" : "Recycle"
