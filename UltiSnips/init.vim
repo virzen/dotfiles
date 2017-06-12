@@ -1,0 +1,1 @@
+/Users/virzen/Workspace/dotfiles/configs/.vimrc
