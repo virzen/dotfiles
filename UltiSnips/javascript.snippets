@@ -26,6 +26,10 @@ snippet imrp "import React"
 import React, { PropTypes } from 'react';
 endsnippet
 
+snippet impt
+import PropTypes from 'prop-types';
+endsnippet
+
 snippet ims "import styles"
 import styles from '${1:./style.css}';
 endsnippet
@@ -69,7 +73,11 @@ $1.propTypes = {
 endsnippet
 
 snippet pt
-$1: PropTypes.$2${3:.isRequired},
+PropTypes.$1
+endsnippet
+
+snippet ptr
+PropTypes.$1.isRequired
 endsnippet
 
 snippet ed
