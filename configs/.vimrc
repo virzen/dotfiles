@@ -35,6 +35,10 @@ Plug 'wesQ3/vim-windowswap'
 
 Plug 'ap/vim-css-color'
 
+Plug 'alvan/vim-closetag'
+  let g:closetag_filenames = '*.html,*.jsx'
+  let g:closetag_emptyTags_caseSensitive = 1
+
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-airline'
   let g:airline_theme='hybrid'
