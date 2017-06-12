@@ -33,6 +33,8 @@ Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
 
 Plug 'wesQ3/vim-windowswap'
 
+Plug 'ap/vim-css-color'
+
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-airline'
   let g:airline_theme='hybrid'
