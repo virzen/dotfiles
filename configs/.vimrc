@@ -1,12 +1,11 @@
 "=== Plugins ==="
 call plug#begin('~/.vim/plugged')
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
   let NERDTreeQuitOnOpen=1
   let NERDTreeShowHidden=1
-
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
