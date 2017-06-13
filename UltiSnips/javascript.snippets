@@ -1,3 +1,4 @@
+# debugging
 snippet log "console.log"
 console.log(${1:'test'});
 endsnippet
@@ -6,11 +7,22 @@ snippet table "console.table"
 console.table($1);
 endsnippet
 
-snippet im "import"
-import $1 from '$2';
+# import/export
+snippet im "import" !b
+import ${1:{ $2 }} from '$3';
 endsnippet
 
-snippet imr "import React"
+snippet ed "default export" !b
+export default $1;
+endsnippet
+
+snippet if
+if ($1) ${2:{
+  $3
+}}
+endsnippet
+
+# React
 import React from 'react';
 endsnippet
 
