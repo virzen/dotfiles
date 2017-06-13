@@ -10,6 +10,7 @@ alias gaN='git add -N'
 alias gc='git commit --verbose'
 alias gcm='git commit --verbose -m'
 alias gc!='git commit --verbose --amend'
+alias gcnv='git commit --no-verify'
 
 alias gr='git reset'
 alias grp='git reset --patch'
