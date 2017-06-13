@@ -23,34 +23,35 @@ if ($1) ${2:{
 endsnippet
 
 # React
+snippet imr "import React" !b
 import React from 'react';
 endsnippet
 
-snippet imrc "import React"
+snippet imrc "import React" !b
 import React, { Component } from 'react';
 endsnippet
 
-snippet imrcp "import React"
+snippet imrcp "import React" !b
 import React, { Component, PropTypes } from 'react';
 endsnippet
 
-snippet imrp "import React"
+snippet imrp "import React" !b
 import React, { PropTypes } from 'react';
 endsnippet
 
-snippet impt
+snippet impt "import PropTypes alone" !b
 import PropTypes from 'prop-types';
 endsnippet
 
-snippet ims "import styles"
+snippet ims "import styles" !b
 import styles from '${1:./style.css}';
 endsnippet
 
-snippet imcx "import classnames"
+snippet imcx "import classnames" !b
 import cx from 'classnames';
 endsnippet
 
-snippet imif "import If"
+snippet imif "import If" !b
 import { If } from 'components/Conditions';
 endsnippet
 
@@ -60,7 +61,7 @@ snippet If "If component"
 </If>
 endsnippet
 
-snippet class
+snippet class "Stateful component" !b
 class $1 extends Component {
   render() {
     return (
@@ -70,7 +71,7 @@ class $1 extends Component {
 }
 endsnippet
 
-snippet comp
+snippet comp "Stateless component" !b
 const $1 = ($2) => ${3:{
   return (
     <$4>$5</$4>
