@@ -101,12 +101,31 @@ snippet ptr "required PropTypes" !w
 PropTypes.$1.isRequired
 endsnippet
 
-snippet ed
-export default $1;
+snippet imrtr
+import renderer from 'react-test-renderer';
 endsnippet
 
-snippet if
-if ($1) ${2:{
-  $3
-}}
+# testing
+snippet desc "describe block" !b
+describe('$1', () => {
+  $2
+});
+endsnippet
+
+snippet it "it block" !b
+it('$1', () => {
+  $2
+});
+endsnippet
+
+snippet exp "expect"
+expect($1).to$2;
+endsnippet
+
+snippet snap "jest snapshot" !b
+const tree = renderer.create(
+  $1
+);
+
+expect(tree).toMatchSnapshot();
 endsnippet
