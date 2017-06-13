@@ -91,6 +91,7 @@ vnoremap > >gv
 
 " Custom commands
 command! Bda bufdo bd
+command! Bde %bd | e #
 command! BD bp | bd #
 command! Src source ~/Workspace/dotfiles/configs/.vimrc
 command! PI PlugInstall
