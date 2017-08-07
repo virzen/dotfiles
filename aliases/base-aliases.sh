@@ -22,6 +22,7 @@ fsw() {
 alias fswpy="fsw python3"
 alias fswpy2="fsw python"
 alias fswn="fsw node"
+alias fswflow="fsw ./node_modules/.bin/flow"
 
 bs() {
   browser-sync start --server --files "**" --no-online --no-open $@ &
