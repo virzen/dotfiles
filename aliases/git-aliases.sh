@@ -42,6 +42,7 @@ alias gstd='git stash drop'
 alias gstp='git stash pop'
 alias gstl='git stash list'
 alias gstsh='git stash show -p'
+alias gstki='git stash --keep-index'
 
 alias gpl='git pull'
 
