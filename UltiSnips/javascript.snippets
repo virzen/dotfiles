@@ -41,7 +41,7 @@ snippet imrp "import React" !b
 import React, { PropTypes } from 'react';
 endsnippet
 
-snippet impt "import PropTypes alone" !b
+snippet impts "import PropTypes alone" !b
 import PropTypes from 'prop-types';
 endsnippet
 
@@ -58,7 +58,7 @@ import $1 from 'components/$1';
 endsnippet
 
 snippet imcnt "import container" !b
-import $1 from 'container/$1';
+import $1 from 'containers/$1';
 endsnippet
 
 snippet imif "import If" !b
@@ -69,6 +69,10 @@ snippet If "If component"
 <If ok={$1}>
   $2
 </If>
+endsnippet
+
+snippet t "I18n translation" !w
+I18n.t('$2')
 endsnippet
 
 snippet class "Stateful component" !b
@@ -89,6 +93,12 @@ const $1 = ($2) => ${3:{
 }};
 endsnippet
 
+snippet defps "defaultProps" !b
+$1.defaultProps = {
+  $2
+};
+endsnippet
+
 snippet pts "propTypes" !b
 $1.propTypes = {
   $2
@@ -99,7 +109,7 @@ snippet pt "PropType" !w
 PropTypes.$1
 endsnippet
 
-snippet ptr "required PropTypes" !w
+snippet ptr "required PropType" !w
 PropTypes.$1.isRequired
 endsnippet
 
