@@ -83,8 +83,36 @@ snippet If "If component"
 </If>
 endsnippet
 
-snippet t "I18n translation" !w
-I18n.t('$2')
+snippet imfm "import FormattedMessage" !b
+import { FormattedMessage } from 'react-intl';
+endsnippet
+
+snippet imii "import FormattedMessage" !b
+import { injectIntl } from 'react-intl';
+endsnippet
+
+snippet imfmii "import FormattedMessage" !b
+import { FormattedMessage, injectIntl } from 'react-intl';
+endsnippet
+
+snippet fm "FormattedMessage" !w
+<FormattedMessage id="$1" />
+endsnippet
+
+snippet fmv "FormattedMessage with values" !w
+<FormattedMessage id="$1" ${2:values={{$3}} }/>
+endsnippet
+
+snippet ifm "intl.formatMessage" !w
+intl.formatMessage({ id: '$1' })
+endsnippet
+
+snippet ifmv "intl.formatMessage with values" !w
+intl.formatMessage({ id: '$1', values: {$2} })
+endsnippet
+
+snippet hoc "Higher-Order Component" !w
+$1(${2:${VISUAL}})
 endsnippet
 
 snippet class "Stateful component" !b
