@@ -18,6 +18,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx'
+  let g:jsx_ext_required = 0
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rhubarb'
@@ -36,7 +37,7 @@ Plug 'wesQ3/vim-windowswap'
 Plug 'ap/vim-css-color'
 
 Plug 'alvan/vim-closetag'
-  let g:closetag_filenames = '*.html,*.jsx'
+  let g:closetag_filenames = '*.html,*.jsx,*.js'
   let g:closetag_emptyTags_caseSensitive = 1
 
 Plug 'vim-airline/vim-airline-themes'
