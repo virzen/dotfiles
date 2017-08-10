@@ -8,6 +8,16 @@ console.table($1)
 endsnippet
 
 
+#=== generic ===#
+snippet tag "HTML/JSX tag" !w
+<$1>${2:${VISUAL}}</$1>
+endsnippet
+
+snippet taga "HTML/JSX tag with attrs" !w
+<$1 $2>${3:${VISUAL}}</$1>
+endsnippet
+
+
 #=== import/export ===#
 snippet im "import" !b
 import ${1:{ $2 }} from '$3';
