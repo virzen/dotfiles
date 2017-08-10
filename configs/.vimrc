@@ -30,7 +30,7 @@ Plug 'SirVer/ultisnips'
   let g:UltiSnipsEditSplit="vertical"
   let g:UltiSnipsSnippetDir="$HOME/.config/nvim/UltiSnips"
 
-Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
+"Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
 
 Plug 'wesQ3/vim-windowswap'
 
