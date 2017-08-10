@@ -158,6 +158,22 @@ import renderer from 'react-test-renderer';
 endsnippet
 
 
+#=== Redux ===#
+snippet rdcr "Redux reducer" !b
+const initialState = ${2:{$3};}
+
+const $1 = (state = initialState, action) => {
+  switch (action.type) {
+    $4
+    default:
+      return state;
+  }
+};
+
+export default $1
+endsnippet
+
+
 #=== testing ===#
 snippet desc "describe block" !b
 describe('$1', () => {
