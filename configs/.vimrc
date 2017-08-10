@@ -9,7 +9,7 @@ Plug 'scrooloose/nerdtree'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-  let g:gitgutter_sign_column_always = 1
+  let signcolumn = "yes"
   let g:gitgutter_realtime = 1
   set updatetime=250
 
