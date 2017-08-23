@@ -220,3 +220,16 @@ const tree = renderer.create(
 
 expect(tree).toMatchSnapshot();
 endsnippet
+
+#=== Storybook ===#
+snippet story "Storybook story" !b
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+
+import $1 from './';
+
+storiesOf('$1', module)
+  .add('basic', () => {
+    return <$1 />
+  })
+endsnippet
