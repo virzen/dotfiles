@@ -23,6 +23,7 @@ Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rhubarb'
 Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-commentary'
 
 Plug 'SirVer/ultisnips'
   let g:UltiSnipsExpandTrigger="<tab>"
