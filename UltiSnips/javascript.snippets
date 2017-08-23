@@ -1,6 +1,6 @@
 #=== debugging ===#
 snippet log "console.log"
-console.log(${1:'test'})
+console.log(${1:${VISUAL}})
 endsnippet
 
 snippet table "console.table"
@@ -119,7 +119,7 @@ snippet class "Stateful component" !b
 class $1 extends Component {
   render() {
     return (
-      $2
+      ${2:${VISUAL}}
     )
   }
 }
