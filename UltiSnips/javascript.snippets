@@ -1,4 +1,12 @@
-#=== debugging ===#
+#=== vanilla js, javascript ===#
+snippet im "import" !b
+import ${1:{ $2 }} from '$3';
+endsnippet
+
+snippet ed "default export" !b
+export default $1;
+endsnippet
+
 snippet log "console.log"
 console.log(${1:${VISUAL}})
 endsnippet
@@ -8,41 +16,7 @@ console.table($1)
 endsnippet
 
 
-#=== generic ===#
-snippet tag "HTML/JSX tag" !w
-<$1>${2:${VISUAL}}</$1>
-endsnippet
-
-snippet stag "HTML/JSX semiclosing tag" !w
-<$1 />
-endsnippet
-
-snippet taga "HTML/JSX tag with attrs" !w
-<$1 $2>${3:${VISUAL}}</$1>
-endsnippet
-
-snippet staga "HTML/JSX semiclosing tag with attrs" !w
-<$1 $2 />
-endsnippet
-
-
-#=== import/export ===#
-snippet im "import" !b
-import ${1:{ $2 }} from '$3';
-endsnippet
-
-snippet ed "default export" !b
-export default $1;
-endsnippet
-
-snippet if
-if ($1) ${2:{
-  $3
-}}
-endsnippet
-
-
-#=== React ===#
+#=== React, PropTypes ===#
 snippet imr "import React" !b
 import React from 'react';
 endsnippet
@@ -61,16 +35,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 endsnippet
 
-snippet impts "import PropTypes alone" !b
+snippet imp "import PropTypes alone" !b
 import PropTypes from 'prop-types';
-endsnippet
-
-snippet ims "import styles" !b
-import styles from '${1:./style.scss}';
-endsnippet
-
-snippet imcx "import classnames" !b
-import cx from 'classnames';
 endsnippet
 
 snippet imcmp "import component" !b
@@ -81,50 +47,16 @@ snippet imcnt "import container" !b
 import $1 from 'containers/$1';
 endsnippet
 
-snippet imif "import If" !b
-import { If } from 'components/Conditions';
+snippet tag "HTML/JSX tag" !w
+<$1>${2:${VISUAL}}</$1>
 endsnippet
 
-snippet If "If component"
-<If ok={$1}>
-  $2
-</If>
+snippet stag "HTML/JSX semiclosing tag" !w
+<$1 />
 endsnippet
 
-snippet imfm "import FormattedMessage" !b
-import { FormattedMessage } from 'react-intl';
-endsnippet
-
-snippet imii "import FormattedMessage" !b
-import { injectIntl } from 'react-intl';
-endsnippet
-
-snippet imfmii "import FormattedMessage" !b
-import { FormattedMessage, injectIntl } from 'react-intl';
-endsnippet
-
-snippet fm "FormattedMessage" !w
-<FormattedMessage id="$1" />
-endsnippet
-
-snippet fmv "FormattedMessage with values" !w
-<FormattedMessage id="$1" ${2:values={{$3}} }/>
-endsnippet
-
-snippet ifm "intl.formatMessage" !w
-intl.formatMessage({ id: '$1' })
-endsnippet
-
-snippet ifmv "intl.formatMessage with values" !w
-intl.formatMessage({ id: '$1', values: {$2} })
-endsnippet
-
-snippet imcn "import connect" !b
-import { connect } from 'react-redux';
-endsnippet
-
-snippet imst "import styled-components" !b
-import styled from 'styled-components';
+snippet taga "HTML/JSX tag with attrs" !w
+<$1 $2>${3:${VISUAL}}</$1>
 endsnippet
 
 snippet hoc "Higher-Order Component" !w
@@ -169,12 +101,44 @@ snippet ptr "required PropType" !w
 PropTypes.$1.isRequired
 endsnippet
 
-snippet imrtr
-import renderer from 'react-test-renderer';
+snippet ptb "PropTypes.bool" !w
+PropTypes.bool
+endsnippet
+
+snippet ptrb "PropTypes.bool" !w
+PropTypes.bool.isRequired
+endsnippet
+
+snippet ptstr "PropTypes.string" !w
+PropTypes.string
+endsnippet
+
+snippet ptrstr "PropTypes.string" !w
+PropTypes.string.isRequired
+endsnippet
+
+snippet ptf "PropTypes.func" !w
+PropTypes.func
+endsnippet
+
+snippet ptrf "PropTypes.func" !w
+PropTypes.func.isRequired
+endsnippet
+
+snippet ptshp "PropTypes.shape({})" !w
+PropTypes.shape({$1})
+endsnippet
+
+snippet ptrshp "PropTypes.shape({})" !w
+PropTypes.shape({$1}).isRequired
 endsnippet
 
 
-#=== Redux ===#
+#=== Redux, react-redux ===#
+snippet imcn "import connect" !b
+import { connect } from 'react-redux';
+endsnippet
+
 snippet rdcr "Redux reducer" !b
 const initialState = ${2:{$3};}
 
@@ -190,13 +154,33 @@ export default $1
 endsnippet
 
 
-#=== ESLint ===#
+#=== Styled components ===#
+snippet imstl "import styled-components" !b
+import styled from 'styled-components';
+endsnippet
+
+snippet imstlwt "import styled-components with theme" !b
+import styled, { withTheme } from 'styled-components';
+endsnippet
+
+snippet stl "styled components" !b
+const $1 = styled.$2\`
+  $3
+\`;
+endsnippet
+
+
+#=== ESLint linter ===#
 snippet esdl "eslint-disable-next-line" !b
 // eslint-disable-next-line $1
 endsnippet
 
 
-#=== testing ===#
+#=== tests testing ===#
+snippet imrtr
+import renderer from 'react-test-renderer';
+endsnippet
+
 snippet desc "describe block" !b
 describe('$1', () => {
   $2
@@ -221,6 +205,7 @@ const tree = renderer.create(
 expect(tree).toMatchSnapshot();
 endsnippet
 
+
 #=== Storybook ===#
 snippet story "Storybook story" !b
 import React from 'react';
@@ -232,4 +217,50 @@ storiesOf('$1', module)
   .add('basic', () => {
     return <$1 />
   })
+endsnippet
+
+snippet darkbg "DarkBg decorator" !b
+  .addDecorator(story => (
+    <DarkBg>{story()}</DarkBg>
+  ))
+endsnippet
+
+
+#=== react-intl, i18n, internationalization ===#
+snippet imfm "import FormattedMessage" !b
+import { FormattedMessage } from 'react-intl';
+endsnippet
+
+snippet imii "import FormattedMessage" !b
+import { injectIntl } from 'react-intl';
+endsnippet
+
+snippet imfmii "import FormattedMessage" !b
+import { FormattedMessage, injectIntl } from 'react-intl';
+endsnippet
+
+snippet fm "FormattedMessage" !w
+<FormattedMessage id="$1" />
+endsnippet
+
+snippet fmv "FormattedMessage with values" !w
+<FormattedMessage id="$1" ${2:values={{$3}} }/>
+endsnippet
+
+snippet ifm "intl.formatMessage" !w
+intl.formatMessage({ id: '$1' })
+endsnippet
+
+snippet ifmv "intl.formatMessage with values" !w
+intl.formatMessage({ id: '$1', values: {$2} })
+endsnippet
+
+
+#=== Spideo ===#
+snippet imclr "import color(s)" !b
+import { $1 } from 'constants/styles/colors';
+endsnippet
+
+snippet imfnt "import font(s)" !b
+import { $1 } from 'constants/styles/fonts';
 endsnippet
