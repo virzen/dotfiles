@@ -15,6 +15,10 @@ alias gals="vim $ALIASES_DIR/git-aliases.sh"
 alias restart="exec zsh"
 
 
+#=== Storybook ===#
+alias stb='yarn storybook'
+
+
 #=== File watching ===#
 fsw() {
   fswatch $2 | xargs -n 1 $1
