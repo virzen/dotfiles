@@ -4,6 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$DOTFILES_DIR/bin:$HOME/homebrew/bin:$PATH"
 source "$DOTFILES_DIR/variables.sh"
 
+
 #=== Theme ===#
 ZSH_THEME="spaceship"
 SPACESHIP_RUBY_SHOW="false"

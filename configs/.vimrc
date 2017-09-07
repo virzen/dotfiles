@@ -16,9 +16,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
   let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx'
-  let g:jsx_ext_required = 0
+" Plug 'othree/yajs.vim', { 'for': 'javascript' }
+" Plug 'mxw/vim-jsx'
+"   let g:jsx_ext_required = 0
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rhubarb'
