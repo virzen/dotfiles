@@ -15,6 +15,16 @@ snippet table "console.table"
 console.table($1)
 endsnippet
 
+snippet cond "conditional" !w
+{$1 && ${2:${VISUAL}}}
+endsnippet
+
+snippet condb "conditional block" !w
+{$1 && (
+  ${2:${VISUAL}}
+)}
+endsnippet
+
 
 #=== React, PropTypes ===#
 snippet imr "import React" !b
@@ -35,8 +45,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 endsnippet
 
-snippet imp "import PropTypes alone" !b
+snippet impts "import PropTypes alone" !b
 import PropTypes from 'prop-types';
+endsnippet
+
+snippet imfpts "import stuff from PropTypes" !b
+import { $1 } from 'prop-types';
 endsnippet
 
 snippet imcmp "import component" !b
@@ -51,12 +65,24 @@ snippet tag "HTML/JSX tag" !w
 <$1>${2:${VISUAL}}</$1>
 endsnippet
 
-snippet stag "HTML/JSX semiclosing tag" !w
-<$1 />
-endsnippet
-
 snippet taga "HTML/JSX tag with attrs" !w
 <$1 $2>${3:${VISUAL}}</$1>
+endsnippet
+
+snippet tagb "HTML/JSX tag" !w
+<$1>
+  ${2:${VISUAL}}
+  </$1>
+endsnippet
+
+snippet tagab "HTML/JSX tag" !w
+<$1 $2>
+  ${3:${VISUAL}}
+  </$1>
+endsnippet
+
+snippet stag "HTML/JSX semiclosing tag" !w
+<$1 />
 endsnippet
 
 snippet hoc "Higher-Order Component" !w
@@ -93,44 +119,40 @@ $1.propTypes = {
 };
 endsnippet
 
-snippet pt "PropType" !w
-PropTypes.$1
-endsnippet
-
 snippet ptr "required PropType" !w
-PropTypes.$1.isRequired
+$1.isRequired
 endsnippet
 
 snippet ptb "PropTypes.bool" !w
-PropTypes.bool
+bool
 endsnippet
 
 snippet ptrb "PropTypes.bool" !w
-PropTypes.bool.isRequired
+bool.isRequired
 endsnippet
 
 snippet ptstr "PropTypes.string" !w
-PropTypes.string
+string
 endsnippet
 
 snippet ptrstr "PropTypes.string" !w
-PropTypes.string.isRequired
+string.isRequired
 endsnippet
 
 snippet ptf "PropTypes.func" !w
-PropTypes.func
+func
 endsnippet
 
 snippet ptrf "PropTypes.func" !w
-PropTypes.func.isRequired
+func.isRequired
 endsnippet
 
 snippet ptshp "PropTypes.shape({})" !w
-PropTypes.shape({$1})
+shape({$1})
 endsnippet
 
 snippet ptrshp "PropTypes.shape({})" !w
-PropTypes.shape({$1}).isRequired
+shape({$1}).isRequired
 endsnippet
 
 
@@ -163,10 +185,18 @@ snippet imstlwt "import styled-components with theme" !b
 import styled, { withTheme } from 'styled-components';
 endsnippet
 
+snippet imstlthm "import theme (from styled-theming)" !b
+import theme from 'styled-theming';
+endsnippet
+
 snippet stl "styled components" !b
 const $1 = styled.$2\`
   $3
 \`;
+endsnippet
+
+snippet theme "styled-theming theme" !b
+const $1 = theme('mode', { dark: $2 });
 endsnippet
 
 
@@ -177,10 +207,6 @@ endsnippet
 
 
 #=== tests testing ===#
-snippet imrtr
-import renderer from 'react-test-renderer';
-endsnippet
-
 snippet desc "describe block" !b
 describe('$1', () => {
   $2
@@ -197,12 +223,10 @@ snippet exp "expect"
 expect($1).to$2;
 endsnippet
 
-snippet snap "jest snapshot" !b
-const tree = renderer.create(
-  $1
-);
 
-expect(tree).toMatchSnapshot();
+#=== recompose ===#
+snippet imfrcmp "import from recompose" !b
+import { ${1:withState} } from 'recompose';
 endsnippet
 
 
@@ -263,4 +287,33 @@ endsnippet
 
 snippet imfnt "import font(s)" !b
 import { $1 } from 'constants/styles/fonts';
+endsnippet
+
+snippet imuthm "import createComponentWithTheme" !b
+import { createComponentWithTheme } from 'utils/tests';
+endsnippet
+
+snippet imuintl "import createComponentWithTheme" !b
+import { createComponentWithIntl } from 'utils/tests';
+endsnippet
+
+snippet action "action" !b
+export const $1 = '$1';
+export const $1_SUCCESS = '$1_SUCCESS';
+export const $1_FAIL = '$1_FAIL';
+
+export const $2 = ${3:(dispatch) =>} {
+  const action = {
+    types: [$1, $1_SUCCESS, $1_FAIL],
+    payload: {
+      ${4:client: SPIDEO_API_CLIENT_KEY,}
+      request: {
+        url: '/$5',
+        $6
+      },
+    },
+  };
+
+  return dispatch(action);
+}
 endsnippet
