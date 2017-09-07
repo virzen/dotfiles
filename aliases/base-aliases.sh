@@ -15,7 +15,8 @@ alias gals="vim $ALIASES_DIR/git-aliases.sh"
 alias restart="exec zsh"
 
 
-#=== Storybook ===#
+#=== Local development ===#
+alias lcl='yarn start'
 alias stb='yarn storybook'
 
 
