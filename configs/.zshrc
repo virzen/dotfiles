@@ -34,14 +34,6 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 
-#=== Aliases ===#
-source "$ALIASES_DIR/base-aliases.sh"
-source "$ALIASES_DIR/git-aliases.sh"
-if [[ -f "$ALIASES_DIR/secret-aliases.sh" ]]; then
-  source "$ALIASES_DIR/secret-aliases.sh"
-fi
-
-
 #=== fzf ===#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -63,3 +55,11 @@ load_nvm() {
 
 #=== rvm ===#
 export PATH="$PATH:$HOME/.rvm/bin"
+
+
+#=== Aliases ===#
+source "$ALIASES_DIR/base-aliases.sh"
+source "$ALIASES_DIR/git-aliases.sh"
+if [[ -f "$ALIASES_DIR/secret-aliases.sh" ]]; then
+  source "$ALIASES_DIR/secret-aliases.sh"
+fi
