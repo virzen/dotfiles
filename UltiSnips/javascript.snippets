@@ -72,7 +72,7 @@ endsnippet
 snippet tagb "HTML/JSX tag" !w
 <$1>
   ${2:${VISUAL}}
-  </$1>
+</$1>
 endsnippet
 
 snippet tagab "HTML/JSX tag" !w
@@ -281,6 +281,10 @@ endsnippet
 
 
 #=== Spideo ===#
+snippet imconst "import constant(s)" !b
+import { $1 } from 'constants/$2';
+endsnippet
+
 snippet imclr "import color(s)" !b
 import { $1 } from 'constants/styles/colors';
 endsnippet
@@ -295,6 +299,10 @@ endsnippet
 
 snippet imuintl "import createComponentWithTheme" !b
 import { createComponentWithIntl } from 'utils/tests';
+endsnippet
+
+snippet imutils "import createComponentWithUtils" !b
+import { createComponentWithUtils } from 'utils/tests';
 endsnippet
 
 snippet action "action" !b
