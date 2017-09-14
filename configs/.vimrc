@@ -68,6 +68,8 @@ map <leader>\ :NERDTreeFind<cr>
 map <leader>p "0p
 map <leader>P "0P
 
+nnoremap <silent> <leader>ag :Ag <C-R><C-W><CR>
+
 " Split pane navigation
 nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
