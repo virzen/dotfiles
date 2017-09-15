@@ -16,11 +16,14 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
   let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-" Plug 'othree/yajs.vim', { 'for': 'javascript' }
-" Plug 'mxw/vim-jsx'
-"   let g:jsx_ext_required = 0
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
+
+Plug 'ap/vim-css-color'
+
+Plug 'alvan/vim-closetag'
+  let g:closetag_filenames = '*.html,*.jsx,*.js'
+  let g:closetag_emptyTags_caseSensitive = 1
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rhubarb'
@@ -33,15 +36,7 @@ Plug 'SirVer/ultisnips'
   let g:UltiSnipsEditSplit="vertical"
   let g:UltiSnipsSnippetDir="$HOME/.config/nvim/UltiSnips"
 
-"Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
-
 Plug 'wesQ3/vim-windowswap'
-
-Plug 'ap/vim-css-color'
-
-Plug 'alvan/vim-closetag'
-  let g:closetag_filenames = '*.html,*.jsx,*.js'
-  let g:closetag_emptyTags_caseSensitive = 1
 
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-airline'
