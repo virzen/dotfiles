@@ -39,6 +39,7 @@ agr() {
   ag $@ app/react
 }
 alias agl='ag --pager="less -XFR"'
+alias ag='ag --path-to-ignore ~/.ignore'
 
 
 #=== Network ===#
