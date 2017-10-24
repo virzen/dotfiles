@@ -62,7 +62,8 @@ alias grbicb='git rebase -i `git merge-base HEAD master`'
 
 alias gm='git merge'
 alias gms='git merge --squash'
-alias gmfm='git checkout master && git pull && git checkout - && git merge master'
+alias gmfm='git fetch && git merge origin/master'
+alias gmfr='git fetch && git merge origin/redesign'
 
 alias gcl='git clone'
 
