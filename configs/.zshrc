@@ -5,6 +5,14 @@ export PATH="$DOTFILES_DIR/bin:$HOME/homebrew/bin:$PATH"
 source "$DOTFILES_DIR/variables.sh"
 
 
+#=== Aliases ===#
+source "$ALIASES_DIR/base-aliases.sh"
+source "$ALIASES_DIR/git-aliases.sh"
+if [[ -f "$ALIASES_DIR/secret-aliases.sh" ]]; then
+  source "$ALIASES_DIR/secret-aliases.sh"
+fi
+
+
 #=== Theme ===#
 ZSH_THEME="spaceship"
 SPACESHIP_RUBY_SHOW="false"
@@ -57,9 +65,3 @@ load_nvm() {
 export PATH="$PATH:$HOME/.rvm/bin"
 
 
-#=== Aliases ===#
-source "$ALIASES_DIR/base-aliases.sh"
-source "$ALIASES_DIR/git-aliases.sh"
-if [[ -f "$ALIASES_DIR/secret-aliases.sh" ]]; then
-  source "$ALIASES_DIR/secret-aliases.sh"
-fi
