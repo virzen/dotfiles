@@ -65,3 +65,5 @@ load_nvm() {
 export PATH="$PATH:$HOME/.rvm/bin"
 
 
+#=== qt ===#
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
