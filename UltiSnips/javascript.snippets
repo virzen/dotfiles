@@ -61,6 +61,14 @@ snippet imcnt "import container" !b
 import $1 from 'containers/$1';
 endsnippet
 
+snippet ima "import action" !b
+import ${1:{ $2 }} from 'actions/$3';
+endsnippet
+
+snippet imaas "import action as" !w
+$1 as $1Action
+endsnippet
+
 snippet tag "HTML/JSX tag" !w
 <$1>${2:${VISUAL}}</$1>
 endsnippet
@@ -316,7 +324,7 @@ export const $2 = ${3:(dispatch) =>} {
     payload: {
       ${4:client: SPIDEO_API_CLIENT_KEY,}
       request: {
-        url: '/$5',
+        url: `/$5`,
         $6
       },
     },
