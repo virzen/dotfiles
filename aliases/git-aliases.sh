@@ -30,6 +30,7 @@ alias gll='git log'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcom='git checkout master'
+alias gcor='git checkout redesign'
 
 alias gb='git branch'
 alias gbd='git branch -d'
