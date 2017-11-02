@@ -7,3 +7,27 @@ snippet media "media query" !b
   $2
 }
 endsnippet
+
+snippet imclr "import colors" !b
+@import '~stylesheets/settings/_color-variables.scss';
+endsnippet
+
+snippet imbrk "import breakpoints" !b
+@import '~stylesheets/settings/_breakpoint-variables.scss';
+endsnippet
+
+snippet immix "import mixins" !b
+@import '~stylesheets/utilities/_mixins.scss';
+endsnippet
+
+snippet imtp "import typography" !b
+@import '~stylesheets/settings/_typography-variables.scss';
+endsnippet
+
+snippet size "@include sizing" !w
+@include sizing($1);
+endsnippet
+
+snippet $ "SCSS variable" !w
+`echo $`${1:var}: $2;
+endsnippet
