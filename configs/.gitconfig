@@ -8,6 +8,6 @@
   default = simple
 [core]
   pager = less -+F
-  excludesfile = /Users/wiktor/.gitignore
+  excludesfile = "$HOME"/.gitignore
 [merge]
 	conflictstyle = diff3
