@@ -46,14 +46,10 @@ import PropTypes from 'prop-types';
 endsnippet
 
 snippet impts "import PropTypes alone" !b
-import PropTypes from 'prop-types';
-endsnippet
-
-snippet imfpts "import stuff from PropTypes" !b
 import { $1 } from 'prop-types';
 endsnippet
 
-snippet imcmp "import component" !b
+snippet imcmpt "import component" !b
 import $1 from 'components/$1';
 endsnippet
 
@@ -70,21 +66,21 @@ $1 as $1Action
 endsnippet
 
 snippet tag "HTML/JSX tag" !w
-<$1>${2:${VISUAL}}</$1>
+<${1:div}>${2:${VISUAL}}</$1>
 endsnippet
 
 snippet taga "HTML/JSX tag with attrs" !w
-<$1 $2>${3:${VISUAL}}</$1>
+<${1:div} $2>${3:${VISUAL}}</$1>
 endsnippet
 
 snippet tagb "HTML/JSX tag" !w
-<$1>
+<${1:div}>
   ${2:${VISUAL}}
 </$1>
 endsnippet
 
 snippet tagab "HTML/JSX tag" !w
-<$1 $2>
+<${1:div} $2>
   ${3:${VISUAL}}
   </$1>
 endsnippet
@@ -107,7 +103,7 @@ class $1 extends Component {
 }
 endsnippet
 
-snippet cmp "Stateless component" !b
+snippet cmpt "Stateless component" !b
 const $1 = ($2) => ${3:{
   return (
     <$4>$5</$4>
@@ -332,4 +328,18 @@ export const $2 = ${3:(dispatch) =>} {
 
   return dispatch(action);
 }
+endsnippet
+
+
+#=== Dealer messenger ===#
+snippet imcx "import classnames" !b
+import cx from 'classnames';
+endsnippet
+
+snippet ims "import styles" !b
+import styles from './styles.scss';
+endsnippet
+
+snippet imfl "import from lodash" !b
+import { ${1:get} } from 'lodash';
 endsnippet
