@@ -11,3 +11,6 @@
   excludesfile = "$HOME"/.gitignore
 [merge]
 	conflictstyle = diff3
+[alias]
+  gone = "!git fetch -p; git branch -vv | ag ': gone]' | cut -d ' ' -f 3"
+  prune-gone = "!git fetch -p; git branch -vv | ag ': gone]' | cut -d ' ' -f 3 | xargs git branch -d"
