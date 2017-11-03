@@ -46,3 +46,4 @@ ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
 
 heading "Symlinking scripts"
 ln -svf "$SCRIPTS_DIR/dotfiles.sh" "$DOTFILES_DIR/bin/dotfiles"
+ln -svf "$SCRIPTS_DIR/git-gone.sh" "$DOTFILES_DIR/bin/git-gone"
