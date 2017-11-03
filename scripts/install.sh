@@ -39,9 +39,9 @@ fi
 ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
 
 
-heading "Installing vim-plug"
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# heading "Installing vim-plug"
+# curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+#     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
 heading "Symlinking scripts"
