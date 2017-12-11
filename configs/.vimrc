@@ -152,7 +152,7 @@ set noswapfile
 
 set mouse=a
 
-set textwidth=80
+set textwidth=100
 autocmd FileType gitcommit set textwidth=72
 set colorcolumn=+1
 
