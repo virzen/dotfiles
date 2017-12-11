@@ -247,10 +247,12 @@ storiesOf('$1', module)
   })
 endsnippet
 
-snippet darkbg "DarkBg decorator" !b
-  .addDecorator(story => (
-    <DarkBg>{story()}</DarkBg>
-  ))
+snippet storyshot "Jest-Storybook storyshot" !b
+import initStoryshots from '@storybook/addon-storyshots';
+
+initStoryshots({
+  storyKindRegex: /^$1$/,
+});
 endsnippet
 
 
