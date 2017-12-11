@@ -40,14 +40,14 @@ alias gds='git diff --staged'
 
 alias gsh='git show'
 
-alias gst='git stash'
+alias gst='git stash save'
+alias gstu='git stash save -u'
+alias gstki='git stash save --keep-index'
 alias gsta='git stash apply'
-alias gsts='git stash save'
 alias gstd='git stash drop'
 alias gstp='git stash pop'
 alias gstl='git stash list'
 alias gstsh='git stash show -p'
-alias gstki='git stash --keep-index'
 
 alias gpl='git pull'
 
