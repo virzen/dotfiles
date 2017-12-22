@@ -27,7 +27,6 @@ ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME/.config/nvim/init.vim"
 ln -svf "$CONFIGS_DIR/.editorconfig" "$HOME"
 ln -svf "$CONFIGS_DIR/.ignore"       "$HOME"
 ln -svf "$CONFIGS_DIR/.agignore"     "$HOME"
-ln -svf "$CONFIGS_DIR/.npmrc"        "$HOME"
 
 
 heading "Symlinking snippets"
