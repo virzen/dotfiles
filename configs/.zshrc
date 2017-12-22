@@ -29,7 +29,7 @@ HIST_STAMPS="dd.mm.yyyy"
 
 
 #=== Plugins ===#
-plugins=(brew osx git-extras history zsh-syntax-highlighting z)
+plugins=(brew osx git-extras history zsh-syntax-highlighting z vi-mode)
 
 
 #=== Oh My Zsh stuff ===#
@@ -40,6 +40,11 @@ source "$ZSH/oh-my-zsh.sh"
 #=== Default editor ===#
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+
+#=== Vi-mode for zsh ===#
+MODE_INDICATOR=""
+export KEYTIMEOUT=1
 
 
 #=== fzf ===#
