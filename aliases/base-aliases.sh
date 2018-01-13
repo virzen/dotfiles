@@ -21,6 +21,8 @@ alias stb='yarn storybook'
 
 
 #=== File watching ===#
+# @param $1 command to run
+# @oaram $2 file to watch
 fsw() {
   fswatch $2 | xargs -n 1 $1
 }
