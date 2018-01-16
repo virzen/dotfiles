@@ -63,16 +63,11 @@ map <leader>\ :NERDTreeFind<cr>
 map <leader>p "0p
 map <leader>P "0P
 
-nnoremap <silent> <leader>ag :Ag <C-R><C-W><CR>
-
 " Split pane navigation
 nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
-
-" Exit insert mode in terminal with escape
-":tnoremap <Esc> <C-\><C-n>
 
 nnoremap U :echo "<<===== CHECK CAPS LOCK =====>>"<CR>
 
