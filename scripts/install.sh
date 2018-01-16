@@ -10,10 +10,10 @@ heading() {
 
 heading "Creating directories"
 if [[ ! -d $HOME/.config/karabiner ]]; then
-  md -v "$HOME/.config/karabiner"
+  mkdir -v "$HOME/.config/karabiner"
 fi
 if [[ ! -d $HOME/.config/nvim ]]; then
-  md -v "$HOME/.config/nvim"
+  mkdir -v "$HOME/.config/nvim"
 fi
 
 
@@ -34,7 +34,7 @@ heading "Symlinking snippets"
 ln -svf "$DOTFILES_DIR/UltiSnips/"    "$HOME/.config/nvim"
 
 if [[ ! -d $HOME/.config/karabiner ]]; then
-  md -v "$HOME/.config/karabiner"
+  mkdir -v "$HOME/.config/karabiner"
 fi
 ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
 
