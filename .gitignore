@@ -2,3 +2,4 @@
 **/*secret*
 bin/*
 .DS_Store
+scripts/dm.sh
