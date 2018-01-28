@@ -55,6 +55,7 @@ alias gpl='git pull'
 
 alias gps='git push'
 alias gpsnv='git push --no-verify'
+alias gpsf='git push --force-with-lease'
 
 alias grb='git rebase'
 alias grba='git rebase --abort'
