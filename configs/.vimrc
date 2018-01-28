@@ -95,6 +95,10 @@ command! PU PlugUpdate
 command! PC PlugClean
 
 
+"=== Autocommands ==="
+autocmd BufRead,BufNewFile *.js :setfiletype javascript.jsx
+
+
 "=== Vim-specific ==="
 set nocompatible
 
