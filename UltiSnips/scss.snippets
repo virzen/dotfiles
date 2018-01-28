@@ -28,10 +28,15 @@ snippet imanim "import animation variables" !b
 @import '~stylesheets/settings/_animation-variables.scss';
 endsnippet
 
-snippet size "@include sizing" !w
-@include sizing($1);
+snippet mix "mixin" !b
+@include ${1:sizing}($2);
 endsnippet
 
 snippet $ "SCSS variable" !w
 `echo $`${1:var}: $2;
+endsnippet
+
+#== DM
+snippet cmpa "composes assetRow" !b
+composes: $1 from '../assetRow.scss';
 endsnippet
