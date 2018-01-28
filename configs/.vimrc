@@ -28,7 +28,7 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-rhubarb'
 Plug 'Raimondi/delimitMate'
-Plug 'tpope/vim-commentary'
+Plug 'tomtom/tcomment_vim'
 
 Plug 'SirVer/ultisnips'
   let g:UltiSnipsExpandTrigger="<tab>"
