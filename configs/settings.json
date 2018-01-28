@@ -1,0 +1,29 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "vim.easymotion": false,
+    "vim.leader": "<space>",
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "t"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showAllSymbols",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false,
+}

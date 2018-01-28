@@ -27,10 +27,13 @@ ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME/.config/nvim/init.vim"
 ln -svf "$CONFIGS_DIR/.editorconfig" "$HOME"
 ln -svf "$CONFIGS_DIR/.ignore"       "$HOME"
 ln -svf "$CONFIGS_DIR/.agignore"     "$HOME"
+ln -svf "$CONFIGS_DIR/settings.json" "$HOME/Library/Application\ Support/Code/User"
+ln -svf "$CONFIGS_DIR/keybindings.json" "$HOME/Library/Application\ Support/Code/User"
 
 
 heading "Symlinking snippets"
-ln -svf "$DOTFILES_DIR/UltiSnips/"    "$HOME/.config/nvim"
+ln -svf "$DOTFILES_DIR/UltiSnips/"      "$HOME/.config/nvim"
+ln -svf "$DOTFILES_DIR/vscode-snippets" "$HOME/Library/Application\ Support/Code/User/snippets"
 
 if [[ ! -d $HOME/.config/karabiner ]]; then
   mkdir -v "$HOME/.config/karabiner"
