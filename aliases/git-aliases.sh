@@ -22,6 +22,8 @@ alias grh='git reset --hard'
 
 alias gu='git undo'
 
+alias gbs='git bisect'
+
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset
 -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias glm='git log --oneline --author="Wiktor Czajkowski"'
