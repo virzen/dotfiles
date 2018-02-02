@@ -1,0 +1,96 @@
+{
+/*
+	// Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2",
+		],
+		"description": "Log output to console",
+	},
+*/
+	"Log": {
+		"prefix": "log",
+		"body": [
+			"console.log($1)",
+		],
+		"description": "Log to the console"
+	},
+	"Log string": {
+		"prefix": "logs",
+		"body": [
+			"console.log('$1')",
+		],
+		"description": "Log a string to the console"
+	},
+	"import": {
+		"prefix": "im",
+		"body": [
+			"import $1 from '$2';",
+		],
+		"description": "Import anything",
+	},
+	"import React": {
+		"prefix": "imr",
+		"body": [
+			"import React from 'react';",
+		],
+		"description": "Import React",
+	},
+	"import prop types": {
+		"prefix": "impts",
+		"body": [
+			"import { $1 } from 'prop-types';",
+		],
+		"description": "Import from prop types",
+	},
+	"React stateless component": {
+		"prefix": "cmpt",
+		"body": [
+			"const $1 = ($2) => {",
+			"  return ($3);",
+			"};",
+		],
+		"description": "Import from prop types",
+	},
+	"Prop types": {
+		"prefix": "pts",
+		"body": [
+			"$1.propTypes = {",
+			"  ",
+			"};",
+		],
+		"description": "Import from prop types",
+	},
+	"import styles": {
+		"prefix": "ims",
+		"body": [
+			"import styles from './styles.scss';",
+		],
+		"description": "Import CSS Modules styles from current directory",
+	},
+	"describe": {
+		"prefix": "desc",
+		"body": [
+			"describe('$1', () => {",
+			"  $2",
+			"});",
+		],
+		"description": "Insert Jest describe block",
+	},
+	"it": {
+		"prefix": "it",
+		"body": [
+			"it('$1', () => {",
+			"  $2",
+			"});",
+		],
+		"description": "Insert Jest it block",
+	},
+
+}
