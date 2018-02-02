@@ -36,4 +36,5 @@
     ],
     "editor.tabSize": 2,
     "explorer.confirmDelete": false,
+    "editor.cursorBlinking": "solid",
 }
