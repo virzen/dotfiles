@@ -37,4 +37,8 @@
     "editor.tabSize": 2,
     "explorer.confirmDelete": false,
     "editor.cursorBlinking": "solid",
+    "files.associations": {
+        "**/app/react/components/**/*.js": "javascriptreact",
+        "**/app/react/views/**/*.js": "javascriptreact",
+    },
 }
