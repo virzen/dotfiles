@@ -22,6 +22,16 @@
                     "args": []
                 }
             ]
+        },
+        {
+            "before": ["g", "p"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.previewDeclaration",
+                    "args": []
+                }
+            ]
         }
     ],
     "editor.tabSize": 2,
