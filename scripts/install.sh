@@ -52,7 +52,9 @@ fi
 
 
 heading "Symlinking scripts"
-mkdir "$DOTFILES_DIR/bin"
+if [[ ! -d $DOTFILES_DIR/bin ]]; then
+  mkdir "$DOTFILES_DIR/bin"
+fi
 ln -svf "$SCRIPTS_DIR/dotfiles.sh" "$DOTFILES_DIR/bin/dotfiles"
 ln -svf "$SCRIPTS_DIR/git-gone.sh" "$DOTFILES_DIR/bin/git-gone"
 ln -svf "$SCRIPTS_DIR/brew-postupgrade.sh" "$DOTFILES_DIR/bin/brew-postupgrade"
