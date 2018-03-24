@@ -60,5 +60,7 @@ ln -svf "$SCRIPTS_DIR/git-gone.sh" "$DOTFILES_DIR/bin/git-gone"
 ln -svf "$SCRIPTS_DIR/brew-postupgrade.sh" "$DOTFILES_DIR/bin/brew-postupgrade"
 
 
-heading "Setting zsh as the default shell"
-sudo chsh -s $(which zsh)
+if [[ $SHELL != '/bin/zsh' ]]; then
+  heading "Setting zsh as the default shell"
+  sudo chsh -s '/bin/zsh'
+fi
