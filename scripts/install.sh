@@ -1,5 +1,6 @@
 #!/bin/bash
-#export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+echo $DOTFILES_DIR
 source "$DOTFILES_DIR/variables.sh"
 
 
