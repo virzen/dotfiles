@@ -9,37 +9,39 @@ heading() {
 }
 
 
-heading "Creating directories"
-if [[ ! -d $HOME/.config/karabiner ]]; then
-  mkdir -v "$HOME/.config/karabiner"
-fi
-if [[ ! -d $HOME/.config/nvim ]]; then
-  mkdir -v "$HOME/.config/nvim"
-fi
-
-
 heading "Symlinking configs"
 ln -svf "$CONFIGS_DIR/.zprofile"     "$HOME"
 ln -svf "$CONFIGS_DIR/.zshrc"        "$HOME"
 ln -svf "$CONFIGS_DIR/.gitconfig"    "$HOME"
 ln -svf "$CONFIGS_DIR/.gitignore"    "$HOME"
-ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME"
-ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME/.config/nvim/init.vim"
 ln -svf "$CONFIGS_DIR/.editorconfig" "$HOME"
 ln -svf "$CONFIGS_DIR/.ignore"       "$HOME"
 ln -svf "$CONFIGS_DIR/.agignore"     "$HOME"
-ln -svf "$CONFIGS_DIR/settings.json" "$HOME/Library/Application\ Support/Code/User"
-ln -svf "$CONFIGS_DIR/keybindings.json" "$HOME/Library/Application\ Support/Code/User"
 
 
-heading "Symlinking snippets"
-ln -svf "$DOTFILES_DIR/UltiSnips/"      "$HOME/.config/nvim"
-ln -svf "$DOTFILES_DIR/vscode-snippets" "$HOME/Library/Application\ Support/Code/User/snippets"
-
+heading "Symlinking karabiner stuff"
+if [[ ! -d $HOME/.config/karabiner ]]; then
+  mkdir -v "$HOME/.config/karabiner"
+fi
 if [[ ! -d $HOME/.config/karabiner ]]; then
   mkdir -v "$HOME/.config/karabiner"
 fi
 ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
+
+
+heading "Symlinking nvim stuff"
+if [[ ! -d $HOME/.config/nvim ]]; then
+  mkdir -v "$HOME/.config/nvim"
+fi
+ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME"
+ln -svf "$CONFIGS_DIR/.vimrc"        "$HOME/.config/nvim/init.vim"
+ln -svf "$DOTFILES_DIR/UltiSnips/"      "$HOME/.config/nvim"
+
+
+heading "Symlinking VSCode configs"
+ln -svf "$CONFIGS_DIR/settings.json" "$HOME/Library/Application\ Support/Code/User"
+ln -svf "$CONFIGS_DIR/keybindings.json" "$HOME/Library/Application\ Support/Code/User"
+ln -svf "$DOTFILES_DIR/vscode-snippets" "$HOME/Library/Application\ Support/Code/User/snippets"
 
 
 # heading "Installing vim-plug"
@@ -48,9 +50,11 @@ ln -svf "$CONFIGS_DIR/karabiner.json" "$HOME/.config/karabiner"
 
 
 heading "Symlinking scripts"
+mkdir "$DOTFILES_DIR/bin"
 ln -svf "$SCRIPTS_DIR/dotfiles.sh" "$DOTFILES_DIR/bin/dotfiles"
 ln -svf "$SCRIPTS_DIR/git-gone.sh" "$DOTFILES_DIR/bin/git-gone"
 ln -svf "$SCRIPTS_DIR/brew-postupgrade.sh" "$DOTFILES_DIR/bin/brew-postupgrade"
+
 
 heading "Setting zsh as the default shell"
 sudo chsh -s $(which zsh)
