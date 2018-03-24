@@ -44,9 +44,11 @@ ln -svf "$CONFIGS_DIR/keybindings.json" "$HOME/Library/Application\ Support/Code
 ln -svf "$DOTFILES_DIR/vscode-snippets" "$HOME/Library/Application\ Support/Code/User/snippets"
 
 
-# heading "Installing vim-plug"
-# curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-#     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if [[ ! -e $HOME/.local/share/nvim/site/autoload/plug.vim ]]; then
+  heading "Installing vim-plug"
+  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
 
 
 heading "Symlinking scripts"
