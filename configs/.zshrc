@@ -29,7 +29,7 @@ HIST_STAMPS="dd.mm.yyyy"
 
 
 #=== Plugins ===#
-plugins=(brew osx git-extras history zsh-syntax-highlighting z)
+plugins=(brew osx git-extras history z zsh-syntax-highlighting)
 
 
 #=== Oh My Zsh stuff ===#
