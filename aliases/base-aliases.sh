@@ -59,6 +59,8 @@ ssh-generate() {
   fi
 
   ssh-keygen -t rsa -b 4096 -C $1
-  ssh-add ~/.ssh/id_rsa
+  # -K for storing in the keychain
+  ssh-add -K ~/.ssh/id_rsa
+  cp -nv "$DOTFILES_DIR/configs/ssh ~/.ssh/config"
   pubkey
 }
