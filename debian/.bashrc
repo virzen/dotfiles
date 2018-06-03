@@ -3,10 +3,7 @@ PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\
 
 setxkbmap -option caps:escape
 
-if [ -f ~/.bash_defaults ]; then
-    . ~/.bash_defaults
-fi
+. ~/.bash_defaults
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
-fi
+. ~/Workspace/dotfiles/shared/git-aliases.sh
+. ~/.aliases

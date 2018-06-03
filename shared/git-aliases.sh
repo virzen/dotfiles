@@ -45,6 +45,7 @@ alias gsh='git show'
 alias gst='git stash save'
 alias gstu='git stash save -u'
 alias gstki='git stash save --keep-index'
+alias gstuki='git stash save -u --keep-index'
 alias gsta='git stash apply'
 alias gstd='git stash drop'
 alias gstp='git stash pop'
@@ -65,15 +66,12 @@ alias grbi='git rebase --interactive'
 alias grbicb='git rebase -i `git merge-base HEAD master`'
 
 alias gm='git merge'
-alias gms='git merge --squash'
-alias gmfm='git fetch && git merge origin/master'
-alias gmfr='git fetch && git merge origin/redesign'
 
 alias gcl='git clone'
 
 # Push current branch to origin with tracking
 gpsuc() {
-  if CURRENT_BRANCH_NAME=$(git symbolic-ref --short -q HEAD) then
+  if CURRENT_BRANCH_NAME=$(git symbolic-ref --short -q HEAD); then
     git push -u origin $CURRENT_BRANCH_NAME $@
   else
     echo "Cannot detect current branch."
