@@ -30,11 +30,11 @@ Plug 'tpope/vim-rhubarb'
 Plug 'Raimondi/delimitMate'
 Plug 'tomtom/tcomment_vim'
 
-Plug 'SirVer/ultisnips'
-  let g:UltiSnipsExpandTrigger="<tab>"
-  let g:UltiSnipsJumpForwardTrigger="<tab>"
-  let g:UltiSnipsEditSplit="vertical"
-  let g:UltiSnipsSnippetDir="$HOME/.config/nvim/UltiSnips"
+" Plug 'SirVer/ultisnips'
+"   let g:UltiSnipsExpandTrigger="<tab>"
+"   let g:UltiSnipsJumpForwardTrigger="<tab>"
+"   let g:UltiSnipsEditSplit="vertical"
+"   let g:UltiSnipsSnippetDir="$HOME/.config/nvim/UltiSnips"
 
 Plug 'wesQ3/vim-windowswap'
 
