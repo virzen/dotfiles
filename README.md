@@ -9,7 +9,7 @@
 
 ### Fish
 
-$SYSTEM represents the operating system that is being configured. Currently either 'mac' or 'debian'.
+`$SYSTEM` represents the operating system that is being configured. Currently either `'mac'` or `'debian'`.
 
 - Symlink entire `fish` directory to `~/.config`, usually like
 
