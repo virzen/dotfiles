@@ -6,7 +6,9 @@ set debianDir (dirname $fishDir)
 set dotfilesDir (dirname $debianDir)
 set sharedDir $dotfilesDir/shared
 
-echo $file
+mkdir ~/.config/fish
+mkdir ~/.config/fish/conf.d
+mkdir ~/.config/fish/functions
 
 echo 'Functions'
 for func in $fishDir/functions/*
