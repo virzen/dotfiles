@@ -1,8 +1,9 @@
 # dotfiles
 
 ## Structure
+- fish - configuration for the loveliest of shells <3
 - debian, mac - system-specific configurations
-- shared - configurations used on both
+- shared - configurations not tied to specific system or shell (aliases, editor configs etc.)
 
 ## Setup
 
