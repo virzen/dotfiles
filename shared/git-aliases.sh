@@ -33,6 +33,7 @@ alias gcor='git checkout redesign'
 
 alias gb='git branch'
 alias gbd='git branch -d'
+alias gbD='git branch -D'
 
 alias gd='git diff'
 alias gds='git diff --staged'
@@ -48,6 +49,8 @@ alias gstd='git stash drop'
 alias gstp='git stash pop'
 alias gstl='git stash list'
 alias gstsh='git stash show -p'
+
+alias gf='git fetch'
 
 alias gpl='git pull'
 
