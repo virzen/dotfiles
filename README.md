@@ -10,13 +10,13 @@
 ### Fish
 
 - Symlink entire `fish` directory to `~/.config`, usually like
-  ```
-  ln -s /home/virzen/Workspace/dotfiles/fish ~/.config
+  ```sh
+  ln -s $HOME/Workspace/dotfiles/fish ~/.config
   ```
 
 - Symlink shared aliases to `conf.d` dir inside `fish` directory, usually like
-  ```
-  ln -s /home/virzen/Workspace/dotfiles/shared/git-aliases.sh /home/virzen/Workspace/dotfiles/fish/conf.d/aliases.fish
+  ```sh
+  ln -s $HOME/Workspace/dotfiles/shared/git-aliases.sh $HOME/Workspace/dotfiles/fish/conf.d/aliases.fish
   ```
   This way they will be automatically loaded on fish startup.
 
