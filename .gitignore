@@ -1,2 +1,3 @@
 bin
 fishd.*
+*/fish/conf.d/git-aliases.fish
