@@ -1,0 +1,1 @@
+/Users/wiktorczajkowski/Workspace/dotfiles/shared/git-aliases.sh
