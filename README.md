@@ -31,3 +31,5 @@
 
 - use fish shell only and move aliases there?
 - create a script for convertion between fish and zsh/bash aliases?
+- change color of git prompt
+- use informative git prompt
