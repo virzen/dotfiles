@@ -27,6 +27,20 @@
 
 - [install fish](https://software.opensuse.org/download.html?project=shells%3Afish%3Arelease%3A2&package=fish)
 
+### Git
+
+Symlink gitconfig
+```
+ln -s $HOME/Workspace/dotfiles/shared/.gitconfig ~
+```
+
+### Editorconfig
+
+Symlink editorconfig
+```
+ln -s $HOME/Workspace/dotfiles/shared/.editorconfig ~
+```
+
 ## TODO
 
 - use fish shell only and move aliases there?
