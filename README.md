@@ -30,3 +30,4 @@ $SYSTEM represents the operating system that is being configured. Currently eith
 ## TODO
 
 - use fish shell only and move aliases there?
+- create a script for convertion between fish and zsh/bash aliases?
