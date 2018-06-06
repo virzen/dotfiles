@@ -10,4 +10,4 @@
   pager = less -+F
   excludesfile = "$HOME"/.gitignore
 [merge]
-	conflictstyle = diff3
+  conflictstyle = diff3
