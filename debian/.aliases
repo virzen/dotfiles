@@ -1,6 +1,0 @@
-alias ..='cd ..'
-alias l='ls -la'
-
-alias vim=nvim
-alias bashrc='vim ~/.bashrc'
-alias aliases='vim ~/.aliases'
