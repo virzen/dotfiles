@@ -18,7 +18,6 @@ abbr --add gcae 'git commit --allow-empty'
 abbr --add gr 'git reset'
 abbr --add grp 'git reset --patch'
 abbr --add grs 'git reset --soft'
-abbr --add grh 'git reset --hard'
 
 abbr --add gu 'git undo'
 
