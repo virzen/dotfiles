@@ -4,26 +4,6 @@
     "vim.leader": "<space>",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>", "t"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.quickOpen",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": ["<leader>", "s"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showAllSymbols",
-                    "args": []
-                }
-            ]
-        },
-        {
             "before": ["g", "p"],
             "after": [],
             "commands": [
