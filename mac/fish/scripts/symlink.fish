@@ -12,6 +12,11 @@ function heading
   echo $argv
 end
 
+heading Directories
+mkdir -v $HOME/.config
+mkdir -v $HOME/.config/fish
+mkdir -v $HOME/.config/fish/functions
+mkdir -v $HOME/.config/fish/conf.d
 
 heading Functions
 for func in $fishDir/functions/*
