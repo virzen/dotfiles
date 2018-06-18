@@ -25,6 +25,10 @@ end
 heading Config
 ln -sv $fishDir/config.fish $HOME/.config/fish
 
+# TODO: possible change to symlink everything from mac/fish/conf.d?
+heading Mac abbreviations
+ln -sv $macDir/fish/conf.d/mac-aliases.fish $HOME/.config/fish/conf.d
+
 heading Shared abbreviations
 for aliasesFile in $sharedDir/*-abbreviations.fish
   ln -sv $aliasesFile $HOME/.config/fish/conf.d
