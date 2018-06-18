@@ -20,11 +20,11 @@ mkdir -v $HOME/.config/fish/conf.d
 
 heading Functions
 for func in $fishDir/functions/*
-  ln -svf $func $HOME/.config/fish/functions
+  ln -sv $func $HOME/.config/fish/functions
 end
 
 heading Config
-ln -svf $fishDir/config.fish $HOME/.config/fish
+ln -sv $fishDir/config.fish $HOME/.config/fish
 
 heading Shared abbreviations
 for aliases in $sharedDir/*-abbreviations.fish
