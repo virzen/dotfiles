@@ -29,3 +29,9 @@ heading Shared abbreviations
 for aliasesFile in $sharedDir/*-abbreviations.fish
   ln -sv $aliasesFile $HOME/.config/fish/conf.d
 end
+
+heading Shared configs
+set sharedConfigs $sharedDir/.editorconfig $sharedDir/.gitconfig
+for sharedConfig in $sharedConfigs
+  ln -sv $sharedConfig $HOME
+end
