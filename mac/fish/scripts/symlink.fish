@@ -6,7 +6,6 @@ set macDir (dirname $fishDir)
 set dotfilesDir (dirname $macDir)
 set sharedDir $dotfilesDir/shared
 
-echo $file
 function heading
   echo ''
   echo $argv
@@ -27,6 +26,6 @@ heading Config
 ln -sv $fishDir/config.fish $HOME/.config/fish
 
 heading Shared abbreviations
-for aliases in $sharedDir/*-abbreviations.fish
-  ln -sv $aliases $HOME/.config/fish/conf.d
+for aliasesFile in $sharedDir/*-abbreviations.fish
+  ln -sv $aliasesFile $HOME/.config/fish/conf.d
 end
