@@ -35,3 +35,7 @@ set sharedConfigs $sharedDir/.editorconfig $sharedDir/.gitconfig
 for sharedConfig in $sharedConfigs
   ln -sv $sharedConfig $HOME
 end
+
+heading SSH config for mac
+mkdir $HOME/.ssh
+ln -sv $macDir/.ssh/config $HOME/.ssh/config
