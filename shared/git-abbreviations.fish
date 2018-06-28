@@ -67,3 +67,11 @@ abbr --add grbicb 'git rebase -i `git merge-base HEAD master`'
 abbr --add gm 'git merge'
 
 abbr --add gcl 'git clone'
+
+function gpsuc
+  if set CURRENT_BRANCH_NAME (git symbolic-ref --short -q HEAD)
+    git push -u origin $CURRENT_BRANCH_NAME $argv
+  else
+    echo "Cannot detect current branch."
+  end
+end
