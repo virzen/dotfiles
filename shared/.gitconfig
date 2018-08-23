@@ -11,3 +11,7 @@
   excludesfile = "$HOME"/.gitignore
 [merge]
   conflictstyle = diff3
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
