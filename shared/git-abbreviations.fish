@@ -28,7 +28,7 @@ abbr --add gl 'git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Cre
 abbr --add gco 'git checkout'
 abbr --add gcob 'git checkout -b'
 abbr --add gcom 'git checkout master'
-abbr --add gcor 'git checkout redesign'
+abbr --add gcod 'git checkout develop'
 
 abbr --add gb 'git branch'
 abbr --add gbd 'git branch -d'
