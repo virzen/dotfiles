@@ -1,1 +1,5 @@
 abbr --add l 'ls -la'
+abbr --add code 'code-insiders'
+abbr --add vim 'nvim'
+abbr --add gals 'nvim ~/Workspace/dotfiles/shared/git-abbreviations.fish'
+abbr --add bals 'nvim ~/Workspace/dotfiles/shared/base-abbreviations.fish'
