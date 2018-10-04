@@ -1,6 +1,7 @@
 [user]
   name = Wiktor Czajkowski
   email = wiktor.czajkowski@gmail.com
+	signingkey = 4CD55D45FDECAC92
 [pull]
   rebase = true
   default = simple
