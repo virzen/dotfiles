@@ -4,7 +4,7 @@
   "editor.fontLigatures": true,
 
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Kimbie Dark",
+  "workbench.colorTheme": "Dracula Soft",
 
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -15,15 +15,35 @@
   "[javascriptreact]": {
     "editor.formatOnSave": true
   },
+  "[mdx]": {
+    "editor.formatOnSave": true
+  },
 
   // vim-related
   "editor.lineNumbers": "relative",
-  "vim.easymotion": true,
   "vim.leader": "<space>",
+  "vim.easymotion": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "w"],
-      "after": ["<leader>", "<leader>", "w"]
-    }
-  ]
+      "after": ["<leader>", "<leader>", "w"],
+    },
+    {
+      "before": ["<leader>", "b"],
+      "after": ["<leader>", "<leader>", "b"],
+    },
+  ],
+  "vim.easymotionKeys": "asdfjkl;zxcvnm,",
+  "json.format.enable": false,
+  "breadcrumbs.enabled": true,
+  "bookmarks.navigateThroughAllFiles": true,
+  "vim.easymotionMarkerBackgroundColor": "#fff",
+  "vim.easymotionMarkerForegroundColorOneChar": "#333",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#333",
+  "vim.easymotionMarkerFontWeight": "bold",
+  "vim.easymotionMarkerFontSize": "16",
+  "vim.easymotionMarkerHeight": 16,
+  "vim.easymotionMarkerWidthPerChar": 11,
+  "bookmarks.wrapNavigation": false
 }
+
