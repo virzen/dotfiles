@@ -1,0 +1,7 @@
+set visualbell
+set noerrorbells
+
+let mapleader = " "
+
+map <leader>w :action AceWordForwardAction<CR>
+map <leader>b :action AceWordBackwardAction<CR>
