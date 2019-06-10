@@ -1,0 +1,7 @@
+#editBMPanel_keywordRow {
+    visibility: visible !important;
+}
+
+#back-button, #forward-button {
+    display: none;
+}
