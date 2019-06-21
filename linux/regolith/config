@@ -209,8 +209,6 @@ new_float pixel 1
 gaps inner 36
 gaps outer 0
 
-smart_gaps off
-
 # Window Border color
 client.focused          #002b36 #586e75 #fdf6e3 #268bd2
 client.focused_inactive #002b36 #073642 #839496 #073642
