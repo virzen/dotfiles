@@ -2,6 +2,10 @@
     visibility: visible !important;
 }
 
-#back-button, #forward-button {
+/* #back-button, #forward-button {
     display: none;
+} */
+
+#TabsToolbar {
+  visibility: collapse;
 }
