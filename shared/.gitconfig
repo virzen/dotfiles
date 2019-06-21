@@ -10,6 +10,7 @@
 [core]
   pager = less -+F
   excludesfile = "$HOME"/.gitignore
+	editor = vim
 [merge]
   conflictstyle = diff3
 [gpg]
