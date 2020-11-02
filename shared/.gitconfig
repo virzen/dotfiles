@@ -7,10 +7,11 @@
   default = simple
 [push]
   default = simple
+[interactive]
+	diffFilter = delta --color-only
 [core]
-  pager = less -+F
+	pager = delta --paging always --file-color bright-green --hunk-color bright-blue
   excludesfile = "$HOME"/.gitignore
-	editor = vim
 [merge]
   conflictstyle = diff3
 [gpg]
